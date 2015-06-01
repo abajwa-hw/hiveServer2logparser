@@ -1,5 +1,5 @@
 -- id: 19615
-SELECT     `T5`.`expense_group_code` AS `column0`, 
+     `T5`.`expense_group_code` AS `column0`, 
      `T5`.`expense_type_code` AS `column1`, 
      `T01`.`organization_code1` AS `column2`, 
      `T01`.`organization_code2` AS `column3`, 
@@ -43,7 +43,7 @@ SELECT     `T5`.`expense_group_code` AS `column0`,
 
 
 -- id: 26846
-SELECT     `SALES_REGION`.`sales_region_code`, 
+     `SALES_REGION`.`sales_region_code`, 
      `SALES_REGION`.`sales_region_en`
  FROM
      `gosales1021`.`sales_region` `SALES_REGION` 
@@ -55,7 +55,7 @@ SELECT     `SALES_REGION`.`sales_region_code`,
 
 
 -- id: 26860
-SELECT     `TIME_DIMENSION0`.`month_key`, 
+     `TIME_DIMENSION0`.`month_key`, 
      CAST(`TIME_DIMENSION0`.`current_year` AS CHAR(4))
  FROM
      (
@@ -77,7 +77,7 @@ SELECT     `TIME_DIMENSION0`.`month_key`,
 
 
 -- id: 26901
-SELECT     `TIME_DIMENSION`.`month_key`, 
+     `TIME_DIMENSION`.`month_key`, 
      `TIME_DIMENSION`.`current_year`, 
      `Sales`.`Revenue`
  FROM
@@ -97,7 +97,7 @@ SELECT     `TIME_DIMENSION`.`month_key`,
 
 
 -- id: 27070
-SELECT     `ORDER_METHOD`.`order_method_en` AS `Order_method`, 
+     `ORDER_METHOD`.`order_method_en` AS `Order_method`, 
      `Products`.`Product_line` AS `Product_line`, 
      `Products`.`Product_type` AS `Product_type`, 
      SUM(`Sales`.`Quantity`) AS `Quantity`, 
@@ -140,7 +140,7 @@ SELECT     `ORDER_METHOD`.`order_method_en` AS `Order_method`,
 
 
 -- id: 27226
-SELECT     `Products`.`Product_line` AS `Product_line`, 
+     `Products`.`Product_line` AS `Product_line`, 
      SUM(`Sales`.`Revenue`) AS `Revenue`
  FROM
      (
@@ -179,7 +179,7 @@ SELECT     `Products`.`Product_line` AS `Product_line`,
 
 
 -- id: 27367
-SELECT     `Products`.`Product_line` AS `Product_line`, 
+     `Products`.`Product_line` AS `Product_line`, 
      SUM(`Sales`.`Revenue`) AS `Revenue`
  FROM
      (
@@ -218,7 +218,7 @@ SELECT     `Products`.`Product_line` AS `Product_line`,
 
 
 -- id: 27597
-SELECT     `TIME_DIMENSION`.`month_key`, 
+     `TIME_DIMENSION`.`month_key`, 
      `Sales`.`Sales_staff_code`, 
      `Order0`.`Order_number`, 
      `Products`.`Product`, 
@@ -329,7 +329,7 @@ SELECT     `TIME_DIMENSION`.`month_key`,
 
 
 -- id: 27750
-SELECT     `Products`.`Product_line` AS `Product_line`, 
+     `Products`.`Product_line` AS `Product_line`, 
      SUM(`Sales`.`Revenue`) AS `Revenue`
  FROM
      (
@@ -364,7 +364,7 @@ SELECT     `Products`.`Product_line` AS `Product_line`,
 
 
 -- id: 27791
-SELECT     `TIME_DIMENSION`.`month_key`, 
+     `TIME_DIMENSION`.`month_key`, 
      `TIME_DIMENSION`.`current_year`, 
      `Sales`.`Revenue`
  FROM
@@ -384,7 +384,7 @@ SELECT     `TIME_DIMENSION`.`month_key`,
 
 
 -- id: 27848
-SELECT     `TIME_DIMENSION`.`month_key`, 
+     `TIME_DIMENSION`.`month_key`, 
      `TIME_DIMENSION`.`current_year`, 
      `ORDER_METHOD`.`order_method_en`, 
      `Sales`.`Quantity`, 

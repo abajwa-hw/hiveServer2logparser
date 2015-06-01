@@ -1,5 +1,5 @@
 -- id: 16
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -21,7 +21,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 42
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
      `GO_TIME_DIM0`.`current_year`
@@ -44,7 +44,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)),
 
 
 -- id: 100
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T41`.`product_line_en`, 
      `SLS_PRODUCT_DIM`.`product_type_key`, 
      `T5`.`product_type_en`, 
@@ -73,7 +73,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 253
-SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`, 
+     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`, 
      `GO_TIME_DIM`.`quarter_key` AS `column1`, 
      `Product`.`Product_line_code` AS `column2`, 
      `Product`.`Product_type_key` AS `column3`, 
@@ -116,7 +116,7 @@ SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`,
 
 
 -- id: 406
-SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`, 
+     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`, 
      `GO_TIME_DIM`.`quarter_key` AS `column1`, 
      `Product`.`Product_line_code` AS `column2`, 
      `Product`.`Product_type_key` AS `column3`, 
@@ -159,7 +159,7 @@ SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`,
 
 
 -- id: 423
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -181,7 +181,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 432
-SELECT     `T0`.`REGION_CODE`, 
+     `T0`.`REGION_CODE`, 
      `T0`.`Region`, 
      `T0`.`COUNTRY_KEY`, 
      `T0`.`Country`
@@ -212,7 +212,7 @@ SELECT     `T0`.`REGION_CODE`,
 
 
 -- id: 458
-SELECT     `T0`.`REGION_CODE`, 
+     `T0`.`REGION_CODE`, 
      `T0`.`Region`, 
      `T0`.`COUNTRY_KEY`, 
      `T0`.`Country`, 
@@ -247,7 +247,7 @@ SELECT     `T0`.`REGION_CODE`,
 
 
 -- id: 525
-SELECT     `Retailer_site`.`Region_code` AS `column0`, 
+     `Retailer_site`.`Region_code` AS `column0`, 
      `Retailer_site`.`Retailer_country_key` AS `column1`, 
      CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column2`, 
      `Retailer_site`.`Region_code` AS `column3`, 
@@ -307,7 +307,7 @@ SELECT     `Retailer_site`.`Region_code` AS `column0`,
 
 
 -- id: 585
-SELECT     `GO_REGION_DIM`.`region_code` AS `column0`, 
+     `GO_REGION_DIM`.`region_code` AS `column0`, 
      `GO_REGION_DIM`.`region_en` AS `column1`, 
      `GO_REGION_DIM`.`country_code` AS `column2`, 
      `GO_REGION_DIM`.`country_en` AS `column3`
@@ -333,7 +333,7 @@ SELECT     `GO_REGION_DIM`.`region_code` AS `column0`,
 
 
 -- id: 645
-SELECT     `GO_REGION_DIM`.`country_code` AS `column0`, 
+     `GO_REGION_DIM`.`country_code` AS `column0`, 
      `EMP_EMPLOYEE_DIM`.`employee_key` AS `column1`, 
      `EMP_EMPLOYEE_DIM`.`employee_name` AS `column2`, 
      `EMP_EMPLOYEE_DIM`.`employee_name_mb` AS `column3`, 
@@ -362,7 +362,7 @@ SELECT     `GO_REGION_DIM`.`country_code` AS `column0`,
 
 
 -- id: 720
-SELECT     `GO_REGION_DIM`.`region_code` AS `column0`, 
+     `GO_REGION_DIM`.`region_code` AS `column0`, 
      `GO_REGION_DIM`.`country_code` AS `column1`, 
      `EMP_EMPLOYEE_DIM`.`employee_key` AS `column2`, 
      AVG(`EMP_SUMMARY_FACT`.`bonus`) AS `column3`
@@ -384,7 +384,7 @@ SELECT     `GO_REGION_DIM`.`region_code` AS `column0`,
 
 
 -- id: 750
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `T2`.`Position_name__level_1_` AS `column1`
  FROM
      (
@@ -408,7 +408,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 797
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `T3`.`Position_name__level_2_` AS `column2`, 
      `T21`.`Position_name__level_1_` AS `C_sortColumn0`
@@ -445,7 +445,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 862
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `T21`.`Position_name__level_3_` AS `column3`, 
@@ -496,7 +496,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 874
-SELECT     `T0`.`employee_topic_key` AS `column0`, 
+     `T0`.`employee_topic_key` AS `column0`, 
      `T0`.`employee_topic_en` AS `column1`
  FROM
      `gosalesdw1021`.`emp_survey_topic_dim` `T0` 
@@ -514,7 +514,7 @@ SELECT     `T0`.`employee_topic_key` AS `column0`,
 
 
 -- id: 932
-SELECT     `T3`.`employee_topic_key` AS `column0`, 
+     `T3`.`employee_topic_key` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code1` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column2`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column3`, 
@@ -537,7 +537,7 @@ SELECT     `T3`.`employee_topic_key` AS `column0`,
 
 
 -- id: 974
-SELECT     `T2`.`employee_topic_key` AS `column0`, 
+     `T2`.`employee_topic_key` AS `column0`, 
      AVG(`EMP_SURVEY_FACT`.`employee_topic_score`) AS `column1`
  FROM
      `gosalesdw1021`.`emp_survey_fact` `EMP_SURVEY_FACT` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `EMP_SURVEY_FACT`.`day_key` = `GO_TIME_DIM`.`day_key` JOIN `gosalesdw1021`.`emp_survey_topic_dim` `T2` ON `T2`.`employee_topic_key` = `EMP_SURVEY_FACT`.`employee_topic_key` 
@@ -554,7 +554,7 @@ SELECT     `T2`.`employee_topic_key` AS `column0`,
 
 
 -- id: 1019
-SELECT     `T3`.`employee_topic_key` AS `column0`, 
+     `T3`.`employee_topic_key` AS `column0`, 
      AVG(`T21`.`employee_topic_target`) AS `column1`
  FROM
      `gosalesdw1021`.`emp_survey_targ_fact` `T21` JOIN 
@@ -579,7 +579,7 @@ SELECT     `T3`.`employee_topic_key` AS `column0`,
 
 
 -- id: 1050
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `T2`.`Position_name__level_1_` AS `column1`
  FROM
      (
@@ -605,7 +605,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 1098
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `T3`.`Position_name__level_2_` AS `column2`, 
      `T21`.`Position_name__level_1_` AS `C_sortColumn0`
@@ -644,7 +644,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 1164
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `T21`.`Position_name__level_3_` AS `column3`, 
@@ -697,7 +697,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 1209
-SELECT     `T01`.`position_code1`, 
+     `T01`.`position_code1`, 
      `T01`.`position_code2`, 
      `T01`.`position_code3`, 
      `T01`.`Sum1`, 
@@ -741,7 +741,7 @@ SELECT     `T01`.`position_code1`,
 
 
 -- id: 1224
-SELECT     `EMP_RANKING_DIM`.`employee_ranking_key` AS `column0`, 
+     `EMP_RANKING_DIM`.`employee_ranking_key` AS `column0`, 
      `EMP_RANKING_DIM`.`ranking_description_en` AS `column1`
  FROM
      `gosalesdw1021`.`emp_ranking_dim` `EMP_RANKING_DIM` 
@@ -765,7 +765,7 @@ SELECT     `EMP_RANKING_DIM`.`employee_ranking_key` AS `column0`,
 
 
 -- id: 1282
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `EMP_RANKING_DIM`.`employee_ranking_key` AS `column3`, 
@@ -790,7 +790,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 1340
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `EMP_RANKING_DIM`.`employee_ranking_key` AS `column3`, 
@@ -815,7 +815,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 1398
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `EMP_RANKING_DIM`.`employee_ranking_key` AS `column3`, 
@@ -840,7 +840,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 1456
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `EMP_RANKING_DIM`.`employee_ranking_key` AS `column3`, 
@@ -865,7 +865,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 1514
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `EMP_RANKING_DIM`.`employee_ranking_key` AS `column3`, 
@@ -890,7 +890,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 1526
-SELECT     `T0`.`satisfaction_code` AS `column0`, 
+     `T0`.`satisfaction_code` AS `column0`, 
      `T0`.`satisfaction_description_en` AS `column1`
  FROM
      `gosalesdw1021`.`go_satisfaction_dim` `T0` 
@@ -908,7 +908,7 @@ SELECT     `T0`.`satisfaction_code` AS `column0`,
 
 
 -- id: 1552
-SELECT     `T1`.`satisfaction_code` AS `column0`, 
+     `T1`.`satisfaction_code` AS `column0`, 
      AVG(`EMP_SURVEY_FACT`.`employee_topic_score`) AS `column1`
  FROM
      `gosalesdw1021`.`emp_survey_fact` `EMP_SURVEY_FACT` JOIN `gosalesdw1021`.`go_satisfaction_dim` `T1` ON `EMP_SURVEY_FACT`.`satisfaction_key` = `T1`.`satisfaction_key` 
@@ -922,7 +922,7 @@ SELECT     `T1`.`satisfaction_code` AS `column0`,
 
 
 -- id: 1602
-SELECT     `T3`.`organization_code1` AS `column0`, 
+     `T3`.`organization_code1` AS `column0`, 
      `T21`.`Organization_name__level_1_` AS `column1`
  FROM
      (
@@ -971,7 +971,7 @@ SELECT     `T3`.`organization_code1` AS `column0`,
 
 
 -- id: 1614
-SELECT     `T0`.`expense_group_code` AS `column0`, 
+     `T0`.`expense_group_code` AS `column0`, 
      `T0`.`expense_group_en` AS `column1`, 
      `T0`.`expense_type_code` AS `column2`, 
      `T0`.`expense_type_en` AS `column3`
@@ -995,7 +995,7 @@ SELECT     `T0`.`expense_group_code` AS `column0`,
 
 
 -- id: 1691
-SELECT     `T01`.`organization_code1` AS `column0`, 
+     `T01`.`organization_code1` AS `column0`, 
      `T5`.`expense_group_code` AS `column1`, 
      `T5`.`expense_type_code` AS `column2`, 
      SUM(`EMP_TRAINING_FACT`.`course_cost`) AS `column3`
@@ -1029,7 +1029,7 @@ SELECT     `T01`.`organization_code1` AS `column0`,
 
 
 -- id: 1778
-SELECT     `T21`.`organization_code1` AS `column0`, 
+     `T21`.`organization_code1` AS `column0`, 
      SUM(`T61`.`expense_plan_total`) AS `column1`
  FROM
      `gosalesdw1021`.`emp_expense_plan_fact` `T61` JOIN 
@@ -1068,7 +1068,7 @@ SELECT     `T21`.`organization_code1` AS `column0`,
 
 
 -- id: 1855
-SELECT     `T01`.`organization_code1` AS `column0`, 
+     `T01`.`organization_code1` AS `column0`, 
      SUM(`EMP_TRAINING_FACT`.`course_cost`) AS `column1`
  FROM
      `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` JOIN `gosalesdw1021`.`emp_training_fact` `EMP_TRAINING_FACT` ON `GO_TIME_DIM`.`day_key` = `EMP_TRAINING_FACT`.`day_key` JOIN 
@@ -1098,7 +1098,7 @@ SELECT     `T01`.`organization_code1` AS `column0`,
 
 
 -- id: 1870
-SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` 
  WHERE 
@@ -1116,7 +1116,7 @@ SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 1893
-SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      concat(`T1`.`quarter_en`, ' '), 
      `GO_TIME_DIM`.`current_year`
@@ -1133,7 +1133,7 @@ SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)),
 
 
 -- id: 1899
-SELECT     `GO_TIME_DIM`.`quarter_key`, 
+     `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`month_key`, 
      concat(`GO_TIME_DIM`.`month_en`, ' '), 
      `GO_TIME_DIM`.`current_year`
@@ -1152,7 +1152,7 @@ SELECT     `GO_TIME_DIM`.`quarter_key`,
 
 
 -- id: 1911
-SELECT     `T0`.`order_method_key` AS `column0`, 
+     `T0`.`order_method_key` AS `column0`, 
      `T0`.`order_method_en` AS `column1`
  FROM
      `gosalesdw1021`.`sls_order_method_dim` `T0` 
@@ -1170,7 +1170,7 @@ SELECT     `T0`.`order_method_key` AS `column0`,
 
 
 -- id: 1953
-SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`, 
+     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`, 
      `GO_TIME_DIM`.`quarter_key` AS `column1`, 
      `GO_TIME_DIM`.`month_key` AS `column2`, 
      `T2`.`order_method_key` AS `column3`, 
@@ -1193,7 +1193,7 @@ SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`,
 
 
 -- id: 2003
-SELECT     `T3`.`organization_code1` AS `column0`, 
+     `T3`.`organization_code1` AS `column0`, 
      `T21`.`Organization_name__level_1_` AS `column1`
  FROM
      (
@@ -1242,7 +1242,7 @@ SELECT     `T3`.`organization_code1` AS `column0`,
 
 
 -- id: 2020
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -1264,7 +1264,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 2104
-SELECT     `T31`.`C`, 
+     `T31`.`C`, 
      `T31`.`organization_code1`, 
      `T31`.`column2`
  FROM
@@ -1309,7 +1309,7 @@ SELECT     `T31`.`C`,
 
 
 -- id: 2113
-SELECT     `T0`.`REGION_CODE`, 
+     `T0`.`REGION_CODE`, 
      `T0`.`Region`
  FROM
      (
@@ -1337,7 +1337,7 @@ SELECT     `T0`.`REGION_CODE`,
 
 
 -- id: 2174
-SELECT     `Retailer_site`.`Region_code` AS `column0`, 
+     `Retailer_site`.`Region_code` AS `column0`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column1`, 
      SUM(`SLS_SALES_FACT`.`unit_price` * `SLS_SALES_FACT`.`quantity`) AS `column2`
  FROM
@@ -1376,7 +1376,7 @@ SELECT     `Retailer_site`.`Region_code` AS `column0`,
 
 
 -- id: 2237
-SELECT     `Retailer_site`.`Region_code` AS `column0`, 
+     `Retailer_site`.`Region_code` AS `column0`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column1`, 
      `GO_TIME_DIM`.`quarter_key` AS `column2`, 
      `GO_TIME_DIM`.`month_key` AS `column3`, 
@@ -1423,7 +1423,7 @@ SELECT     `Retailer_site`.`Region_code` AS `column0`,
 
 
 -- id: 2300
-SELECT     `Retailer_site`.`Region_code` AS `column0`, 
+     `Retailer_site`.`Region_code` AS `column0`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column1`, 
      `GO_TIME_DIM`.`quarter_key` AS `column2`, 
      `GO_TIME_DIM`.`month_key` AS `column3`, 
@@ -1470,7 +1470,7 @@ SELECT     `Retailer_site`.`Region_code` AS `column0`,
 
 
 -- id: 2363
-SELECT     `Retailer_site`.`Region_code` AS `column0`, 
+     `Retailer_site`.`Region_code` AS `column0`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column1`, 
      `GO_TIME_DIM`.`quarter_key` AS `column2`, 
      `GO_TIME_DIM`.`month_key` AS `column3`, 
@@ -1517,7 +1517,7 @@ SELECT     `Retailer_site`.`Region_code` AS `column0`,
 
 
 -- id: 2426
-SELECT     `Retailer_site`.`Region_code` AS `column0`, 
+     `Retailer_site`.`Region_code` AS `column0`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column1`, 
      `GO_TIME_DIM`.`quarter_key` AS `column2`, 
      `GO_TIME_DIM`.`month_key` AS `column3`, 
@@ -1564,7 +1564,7 @@ SELECT     `Retailer_site`.`Region_code` AS `column0`,
 
 
 -- id: 2489
-SELECT     `Retailer_site`.`Region_code` AS `column0`, 
+     `Retailer_site`.`Region_code` AS `column0`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column1`, 
      `GO_TIME_DIM`.`quarter_key` AS `column2`, 
      `GO_TIME_DIM`.`month_key` AS `column3`, 
@@ -1611,7 +1611,7 @@ SELECT     `Retailer_site`.`Region_code` AS `column0`,
 
 
 -- id: 2497
-SELECT     `SLS_RETAILER_DIM`.`retailer_type_code`, 
+     `SLS_RETAILER_DIM`.`retailer_type_code`, 
      `SLS_RETAILER_DIM`.`retailer_type_en`
  FROM
      `gosalesdw1021`.`sls_rtl_dim` `SLS_RETAILER_DIM` 
@@ -1625,7 +1625,7 @@ SELECT     `SLS_RETAILER_DIM`.`retailer_type_code`,
 
 
 -- id: 2580
-SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`, 
+     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`, 
      `Retailer`.`Retailer_type_code` AS `column1`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column2`
  FROM
@@ -1672,7 +1672,7 @@ SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`,
 
 
 -- id: 2630
-SELECT     `T3`.`organization_code1` AS `column0`, 
+     `T3`.`organization_code1` AS `column0`, 
      `T21`.`Organization_name__level_1_` AS `column1`
  FROM
      (
@@ -1721,7 +1721,7 @@ SELECT     `T3`.`organization_code1` AS `column0`,
 
 
 -- id: 2694
-SELECT     `T0`.`organization_code1` AS `column0`, 
+     `T0`.`organization_code1` AS `column0`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column1`, 
      SUM(`SLS_SALES_FACT`.`gross_profit`) AS `column2`
  FROM
@@ -1748,7 +1748,7 @@ SELECT     `T0`.`organization_code1` AS `column0`,
 
 
 -- id: 2718
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T2`.`product_line_en`
  FROM
      `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` JOIN `gosalesdw1021`.`sls_product_line_lookup` `T2` ON `SLS_PRODUCT_DIM`.`product_line_code` = `T2`.`product_line_code` 
@@ -1762,7 +1762,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 2854
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      SUM(`T10`.`return_quantity`) AS `column1`
  FROM
      (
@@ -1790,7 +1790,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 2893
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T21`.`product_line_en`, 
      `SLS_PRODUCT_DIM`.`product_type_key`, 
      `T3`.`product_type_en`
@@ -1807,7 +1807,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 2935
-SELECT     `SLS_PRODUCT_DIM`.`product_type_key`, 
+     `SLS_PRODUCT_DIM`.`product_type_key`, 
      `T4`.`product_type_en`, 
      `SLS_PRODUCT_DIM`.`base_product_key`, 
      `T01`.`product_name`
@@ -1833,7 +1833,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_type_key`,
 
 
 -- id: 3071
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      `Product`.`Product_type_key` AS `column1`, 
      `Product`.`Base_product_key` AS `column2`, 
      SUM(`T10`.`return_quantity`) AS `column3`
@@ -1867,7 +1867,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 3207
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      `Product`.`Product_type_key` AS `column1`, 
      `Product`.`Base_product_key` AS `column2`, 
      SUM(`SLS_SALES_FACT`.`quantity`) AS `column3`
@@ -1901,7 +1901,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 3343
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      `Product`.`Product_type_key` AS `column1`, 
      `Product`.`Base_product_key` AS `column2`, 
      SUM(`SLS_SALES_FACT`.`quantity`) AS `column3`
@@ -1935,7 +1935,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 3479
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      `Product`.`Product_type_key` AS `column1`, 
      `Product`.`Base_product_key` AS `column2`, 
      SUM(`T10`.`return_quantity`) AS `column3`
@@ -1969,7 +1969,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 3615
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      `Product`.`Product_type_key` AS `column1`, 
      `Product`.`Base_product_key` AS `column2`, 
      AVG(`SLS_SALES_FACT`.`unit_cost`) AS `column3`, 
@@ -2005,7 +2005,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 3665
-SELECT     `T3`.`retailer_survey_key` AS `column0`, 
+     `T3`.`retailer_survey_key` AS `column0`, 
      `T3`.`retailer_topic_en` AS `column1`
  FROM
      `gosalesdw1021`.`mrk_rtl_survey_fact` `T21` JOIN 
@@ -2041,7 +2041,7 @@ SELECT     `T3`.`retailer_survey_key` AS `column0`,
 
 
 -- id: 3753
-SELECT     `T21`.`organization_code1` AS `column0`, 
+     `T21`.`organization_code1` AS `column0`, 
      `T71`.`Organization_name__level_1_` AS `column1`
  FROM
      `gosalesdw1021`.`mrk_rtl_survey_fact` `T8` JOIN 
@@ -2105,7 +2105,7 @@ SELECT     `T21`.`organization_code1` AS `column0`,
 
 
 -- id: 3835
-SELECT     `T6`.`retailer_survey_key` AS `column0`, 
+     `T6`.`retailer_survey_key` AS `column0`, 
      `T21`.`organization_code1` AS `column1`, 
      AVG(`T51`.`retailer_topic_score`) AS `column2`
  FROM
@@ -2152,7 +2152,7 @@ SELECT     `T6`.`retailer_survey_key` AS `column0`,
 
 
 -- id: 3883
-SELECT     `T3`.`retailer_survey_key` AS `column0`, 
+     `T3`.`retailer_survey_key` AS `column0`, 
      AVG(`T21`.`retailer_topic_score`) AS `column1`
  FROM
      `gosalesdw1021`.`mrk_rtl_survey_fact` `T21` JOIN 
@@ -2185,7 +2185,7 @@ SELECT     `T3`.`retailer_survey_key` AS `column0`,
 
 
 -- id: 3927
-SELECT     `T2`.`return_reason_key` AS `column0`, 
+     `T2`.`return_reason_key` AS `column0`, 
      `T2`.`reason_description_en` AS `column1`
  FROM
      `gosalesdw1021`.`dist_returned_items_fact` `T01` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `T01`.`day_key` = `GO_TIME_DIM`.`day_key` JOIN `gosalesdw1021`.`dist_return_reason_dim` `T2` ON `T2`.`return_reason_key` = `T01`.`return_reason_key` 
@@ -2206,7 +2206,7 @@ SELECT     `T2`.`return_reason_key` AS `column0`,
 
 
 -- id: 4020
-SELECT     `T6`.`return_reason_key` AS `column0`, 
+     `T6`.`return_reason_key` AS `column0`, 
      SUM(`T11`.`return_quantity`) AS `column1`
  FROM
      `gosalesdw1021`.`dist_returned_items_fact` `T11` JOIN `gosalesdw1021`.`emp_employee_dim` `EMP_EMPLOYEE_DIM` ON `T11`.`employee_key` = `EMP_EMPLOYEE_DIM`.`employee_key` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `T11`.`day_key` = `GO_TIME_DIM`.`day_key` JOIN `gosalesdw1021`.`go_branch_dim` `GO_BRANCH_DIM` ON `EMP_EMPLOYEE_DIM`.`branch_code` = `GO_BRANCH_DIM`.`branch_code` JOIN `gosalesdw1021`.`go_region_dim` `GO_REGION_DIM` ON `GO_REGION_DIM`.`country_code` = `GO_BRANCH_DIM`.`country_code` JOIN `gosalesdw1021`.`dist_return_reason_dim` `T6` ON `T6`.`return_reason_key` = `T11`.`return_reason_key` 
@@ -2224,7 +2224,7 @@ SELECT     `T6`.`return_reason_key` AS `column0`,
 
 
 -- id: 4113
-SELECT     `T6`.`return_reason_key` AS `column0`, 
+     `T6`.`return_reason_key` AS `column0`, 
      SUM(`T11`.`return_quantity`) AS `column1`
  FROM
      `gosalesdw1021`.`dist_returned_items_fact` `T11` JOIN `gosalesdw1021`.`emp_employee_dim` `EMP_EMPLOYEE_DIM` ON `T11`.`employee_key` = `EMP_EMPLOYEE_DIM`.`employee_key` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `T11`.`day_key` = `GO_TIME_DIM`.`day_key` JOIN `gosalesdw1021`.`go_branch_dim` `GO_BRANCH_DIM` ON `EMP_EMPLOYEE_DIM`.`branch_code` = `GO_BRANCH_DIM`.`branch_code` JOIN `gosalesdw1021`.`go_region_dim` `GO_REGION_DIM` ON `GO_REGION_DIM`.`country_code` = `GO_BRANCH_DIM`.`country_code` JOIN `gosalesdw1021`.`dist_return_reason_dim` `T6` ON `T6`.`return_reason_key` = `T11`.`return_reason_key` 
@@ -2242,7 +2242,7 @@ SELECT     `T6`.`return_reason_key` AS `column0`,
 
 
 -- id: 4121
-SELECT     `SLS_RETAILER_DIM`.`retailer_type_code`, 
+     `SLS_RETAILER_DIM`.`retailer_type_code`, 
      `SLS_RETAILER_DIM`.`retailer_type_en`, 
      `SLS_RETAILER_DIM`.`retailer_key`, 
      `SLS_RETAILER_DIM`.`retailer_name`, 
@@ -2260,7 +2260,7 @@ SELECT     `SLS_RETAILER_DIM`.`retailer_type_code`,
 
 
 -- id: 4133
-SELECT     `T0`.`return_reason_key` AS `column0`, 
+     `T0`.`return_reason_key` AS `column0`, 
      `T0`.`reason_description_en` AS `column1`
  FROM
      `gosalesdw1021`.`dist_return_reason_dim` `T0` 
@@ -2278,7 +2278,7 @@ SELECT     `T0`.`return_reason_key` AS `column0`,
 
 
 -- id: 4216
-SELECT     `Retailer`.`Retailer_type_code` AS `column0`, 
+     `Retailer`.`Retailer_type_code` AS `column0`, 
      `Retailer`.`Retailer_key` AS `column1`, 
      `T8`.`return_reason_key` AS `column2`, 
      SUM(`T71`.`return_quantity`) AS `column3`
@@ -2332,7 +2332,7 @@ SELECT     `Retailer`.`Retailer_type_code` AS `column0`,
 
 
 -- id: 4285
-SELECT     `Retailer`.`Retailer_type_code` AS `column0`, 
+     `Retailer`.`Retailer_type_code` AS `column0`, 
      `Retailer`.`Retailer_key` AS `column1`, 
      AVG(`T6`.`retailer_topic_score`) AS `column2`, 
      AVG(`T6`.`retailer_topic_score`) AS `column3`
@@ -2504,7 +2504,7 @@ SELECT     `Retailer`.`Retailer_type_code` AS `column0`,
 
 
 -- id: 4368
-SELECT     `Retailer`.`Retailer_type_code` AS `column0`, 
+     `Retailer`.`Retailer_type_code` AS `column0`, 
      `Retailer`.`Retailer_key` AS `column1`, 
      `T8`.`return_reason_key` AS `column2`, 
      SUM(`T71`.`return_quantity`) AS `column3`
@@ -2558,7 +2558,7 @@ SELECT     `Retailer`.`Retailer_type_code` AS `column0`,
 
 
 -- id: 4453
-SELECT     SUM(`T61`.`return_quantity`) AS `column0`
+     SUM(`T61`.`return_quantity`) AS `column0`
  FROM
      (
      SELECT
@@ -2733,7 +2733,7 @@ SELECT     SUM(`T61`.`return_quantity`) AS `column0`
 
 
 -- id: 4519
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `T31`.`Position_name__level_1_` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column2`, 
      `T4`.`Position_name__level_2_` AS `column3`, 
@@ -2812,7 +2812,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 4561
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      AVG(`EMP_SURVEY_FACT`.`employee_topic_score`) AS `column3`
@@ -2836,7 +2836,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 4603
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      AVG(`EMP_SURVEY_FACT`.`employee_topic_score`) AS `column3`
@@ -2860,7 +2860,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 4645
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      AVG(`EMP_SURVEY_FACT`.`employee_topic_score`) AS `column3`
@@ -2884,7 +2884,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 4687
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      AVG(`EMP_SURVEY_FACT`.`employee_topic_score`) AS `column3`
@@ -2908,7 +2908,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 4729
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      AVG(`EMP_SURVEY_FACT`.`employee_topic_score`) AS `column3`
@@ -2932,7 +2932,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 4771
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      AVG(`EMP_SURVEY_FACT`.`employee_topic_score`) AS `column3`
@@ -2956,7 +2956,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 4813
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      AVG(`EMP_SURVEY_FACT`.`employee_topic_score`) AS `column3`
@@ -2980,7 +2980,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 4855
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      AVG(`EMP_SURVEY_FACT`.`employee_topic_score`) AS `column3`
@@ -3004,7 +3004,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 4897
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      AVG(`EMP_SURVEY_FACT`.`employee_topic_score`) AS `column3`
@@ -3028,7 +3028,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 4942
-SELECT     `T3`.`employee_topic_key` AS `column0`, 
+     `T3`.`employee_topic_key` AS `column0`, 
      AVG(`T21`.`employee_topic_target`) AS `column1`, 
      AVG(`T21`.`employee_survey_benchmark`) AS `column2`
  FROM
@@ -3054,7 +3054,7 @@ SELECT     `T3`.`employee_topic_key` AS `column0`,
 
 
 -- id: 4959
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -3076,7 +3076,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 4973
-SELECT     CAST(`GO_TIME_DIM0`.`quarter_key` AS CHAR(5)), 
+     CAST(`GO_TIME_DIM0`.`quarter_key` AS CHAR(5)), 
      CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4))
  FROM
      (
@@ -3099,7 +3099,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`quarter_key` AS CHAR(5)),
 
 
 -- id: 5000
-SELECT     CAST(`GO_TIME_DIM0`.`quarter_key` AS CHAR(5)), 
+     CAST(`GO_TIME_DIM0`.`quarter_key` AS CHAR(5)), 
      CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
@@ -3125,7 +3125,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`quarter_key` AS CHAR(5)),
 
 
 -- id: 5050
-SELECT     `T3`.`organization_code1` AS `column0`, 
+     `T3`.`organization_code1` AS `column0`, 
      `T21`.`Organization_name__level_1_` AS `column1`
  FROM
      (
@@ -3174,7 +3174,7 @@ SELECT     `T3`.`organization_code1` AS `column0`,
 
 
 -- id: 5062
-SELECT     `T0`.`expense_group_code` AS `column0`, 
+     `T0`.`expense_group_code` AS `column0`, 
      `T0`.`expense_group_en` AS `column1`, 
      `T0`.`expense_type_code` AS `column2`, 
      `T0`.`expense_type_en` AS `column3`
@@ -3198,7 +3198,7 @@ SELECT     `T0`.`expense_group_code` AS `column0`,
 
 
 -- id: 5139
-SELECT     `T01`.`organization_code1` AS `column0`, 
+     `T01`.`organization_code1` AS `column0`, 
      `T5`.`expense_group_code` AS `column1`, 
      `T5`.`expense_type_code` AS `column2`, 
      SUM(`EMP_TRAINING_FACT`.`course_cost`) AS `column3`
@@ -3233,7 +3233,7 @@ SELECT     `T01`.`organization_code1` AS `column0`,
 
 
 -- id: 5159
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -3261,7 +3261,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 5186
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
      `GO_TIME_DIM0`.`current_year`
@@ -3288,7 +3288,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)),
 
 
 -- id: 5272
-SELECT     `T21`.`organization_code1` AS `column0`, 
+     `T21`.`organization_code1` AS `column0`, 
      SUM(`T51`.`expense_plan_total`) AS `column1`
  FROM
      `gosalesdw1021`.`emp_expense_plan_fact` `T51` JOIN 
@@ -3331,7 +3331,7 @@ SELECT     `T21`.`organization_code1` AS `column0`,
 
 
 -- id: 5349
-SELECT     `T01`.`organization_code1` AS `column0`, 
+     `T01`.`organization_code1` AS `column0`, 
      SUM(`EMP_TRAINING_FACT`.`course_cost`) AS `column1`
  FROM
      `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` JOIN `gosalesdw1021`.`emp_training_fact` `EMP_TRAINING_FACT` ON `GO_TIME_DIM`.`day_key` = `EMP_TRAINING_FACT`.`day_key` JOIN 
@@ -3362,7 +3362,7 @@ SELECT     `T01`.`organization_code1` AS `column0`,
 
 
 -- id: 5373
-SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`, 
+     `SLS_PRODUCT_DIM`.`product_brand_key`, 
      `T1`.`product_brand_en`
  FROM
      `gosalesdw1021`.`sls_product_brand_lookup` `T1` JOIN `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` ON `T1`.`product_brand_code` = `SLS_PRODUCT_DIM`.`product_brand_code` 
@@ -3376,7 +3376,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`,
 
 
 -- id: 5783
-SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
+     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column1`
  FROM
      `gosalesdw1021`.`emp_employee_dim` `EMP_EMPLOYEE_DIM` JOIN `gosalesdw1021`.`go_branch_dim` `GO_BRANCH_DIM` ON `EMP_EMPLOYEE_DIM`.`branch_code` = `GO_BRANCH_DIM`.`branch_code` JOIN `gosalesdw1021`.`sls_sales_fact` `SLS_SALES_FACT` ON `SLS_SALES_FACT`.`employee_key` = `EMP_EMPLOYEE_DIM`.`employee_key` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `SLS_SALES_FACT`.`order_day_key` = `GO_TIME_DIM`.`day_key` JOIN 
@@ -3460,7 +3460,7 @@ SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`,
 
 
 -- id: 5807
-SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`, 
+     `SLS_PRODUCT_DIM`.`product_brand_key`, 
      `T1`.`product_brand_en`
  FROM
      `gosalesdw1021`.`sls_product_brand_lookup` `T1` JOIN `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` ON `T1`.`product_brand_code` = `SLS_PRODUCT_DIM`.`product_brand_code` 
@@ -3474,7 +3474,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`,
 
 
 -- id: 6217
-SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
+     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column1`
  FROM
      `gosalesdw1021`.`emp_employee_dim` `EMP_EMPLOYEE_DIM` JOIN `gosalesdw1021`.`go_branch_dim` `GO_BRANCH_DIM` ON `EMP_EMPLOYEE_DIM`.`branch_code` = `GO_BRANCH_DIM`.`branch_code` JOIN `gosalesdw1021`.`sls_sales_fact` `SLS_SALES_FACT` ON `SLS_SALES_FACT`.`employee_key` = `EMP_EMPLOYEE_DIM`.`employee_key` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `SLS_SALES_FACT`.`order_day_key` = `GO_TIME_DIM`.`day_key` JOIN 
@@ -3560,7 +3560,7 @@ SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`,
 
 
 -- id: 6241
-SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`, 
+     `SLS_PRODUCT_DIM`.`product_brand_key`, 
      `T1`.`product_brand_en`
  FROM
      `gosalesdw1021`.`sls_product_brand_lookup` `T1` JOIN `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` ON `T1`.`product_brand_code` = `SLS_PRODUCT_DIM`.`product_brand_code` 
@@ -3574,7 +3574,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`,
 
 
 -- id: 6651
-SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
+     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column1`
  FROM
      `gosalesdw1021`.`emp_employee_dim` `EMP_EMPLOYEE_DIM` JOIN `gosalesdw1021`.`go_branch_dim` `GO_BRANCH_DIM` ON `EMP_EMPLOYEE_DIM`.`branch_code` = `GO_BRANCH_DIM`.`branch_code` JOIN `gosalesdw1021`.`sls_sales_fact` `SLS_SALES_FACT` ON `SLS_SALES_FACT`.`employee_key` = `EMP_EMPLOYEE_DIM`.`employee_key` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `SLS_SALES_FACT`.`order_day_key` = `GO_TIME_DIM`.`day_key` JOIN 
@@ -3660,7 +3660,7 @@ SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`,
 
 
 -- id: 6671
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -3684,7 +3684,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 6698
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
      `GO_TIME_DIM0`.`current_year`
@@ -3709,7 +3709,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)),
 
 
 -- id: 6714
-SELECT     `T2`.`quarter_key`, 
+     `T2`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' ')
  FROM
      `gosalesdw1021`.`go_time_quarter_lookup` `T2` 
@@ -3745,7 +3745,7 @@ SELECT     `T2`.`quarter_key`,
 
 
 -- id: 6733
-SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      concat(`T1`.`quarter_en`, ' '), 
      `GO_TIME_DIM`.`current_year`, 
@@ -3764,7 +3764,7 @@ SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)),
 
 
 -- id: 6742
-SELECT     `T0`.`REGION_CODE`, 
+     `T0`.`REGION_CODE`, 
      `T0`.`Region`
  FROM
      (
@@ -3792,7 +3792,7 @@ SELECT     `T0`.`REGION_CODE`,
 
 
 -- id: 6750
-SELECT     `SLS_RETAILER_DIM`.`retailer_type_code`, 
+     `SLS_RETAILER_DIM`.`retailer_type_code`, 
      `SLS_RETAILER_DIM`.`retailer_type_en`
  FROM
      `gosalesdw1021`.`sls_rtl_dim` `SLS_RETAILER_DIM` 
@@ -3806,7 +3806,7 @@ SELECT     `SLS_RETAILER_DIM`.`retailer_type_code`,
 
 
 -- id: 6774
-SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`, 
+     `SLS_PRODUCT_DIM`.`product_brand_key`, 
      `T1`.`product_brand_en`
  FROM
      `gosalesdw1021`.`sls_product_brand_lookup` `T1` JOIN `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` ON `T1`.`product_brand_code` = `SLS_PRODUCT_DIM`.`product_brand_code` 
@@ -3820,7 +3820,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`,
 
 
 -- id: 7184
-SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
+     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column1`
  FROM
      `gosalesdw1021`.`emp_employee_dim` `EMP_EMPLOYEE_DIM` JOIN `gosalesdw1021`.`go_branch_dim` `GO_BRANCH_DIM` ON `EMP_EMPLOYEE_DIM`.`branch_code` = `GO_BRANCH_DIM`.`branch_code` JOIN `gosalesdw1021`.`sls_sales_fact` `SLS_SALES_FACT` ON `SLS_SALES_FACT`.`employee_key` = `EMP_EMPLOYEE_DIM`.`employee_key` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `SLS_SALES_FACT`.`order_day_key` = `GO_TIME_DIM`.`day_key` JOIN 
@@ -3905,7 +3905,7 @@ SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`,
 
 
 -- id: 7208
-SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`, 
+     `SLS_PRODUCT_DIM`.`product_brand_key`, 
      `T1`.`product_brand_en`
  FROM
      `gosalesdw1021`.`sls_product_brand_lookup` `T1` JOIN `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` ON `T1`.`product_brand_code` = `SLS_PRODUCT_DIM`.`product_brand_code` 
@@ -3919,7 +3919,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`,
 
 
 -- id: 7618
-SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
+     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column1`
  FROM
      `gosalesdw1021`.`emp_employee_dim` `EMP_EMPLOYEE_DIM` JOIN `gosalesdw1021`.`go_branch_dim` `GO_BRANCH_DIM` ON `EMP_EMPLOYEE_DIM`.`branch_code` = `GO_BRANCH_DIM`.`branch_code` JOIN `gosalesdw1021`.`sls_sales_fact` `SLS_SALES_FACT` ON `SLS_SALES_FACT`.`employee_key` = `EMP_EMPLOYEE_DIM`.`employee_key` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `SLS_SALES_FACT`.`order_day_key` = `GO_TIME_DIM`.`day_key` JOIN 
@@ -4006,7 +4006,7 @@ SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`,
 
 
 -- id: 7642
-SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`, 
+     `SLS_PRODUCT_DIM`.`product_brand_key`, 
      `T1`.`product_brand_en`
  FROM
      `gosalesdw1021`.`sls_product_brand_lookup` `T1` JOIN `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` ON `T1`.`product_brand_code` = `SLS_PRODUCT_DIM`.`product_brand_code` 
@@ -4020,7 +4020,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`,
 
 
 -- id: 8052
-SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
+     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column1`
  FROM
      `gosalesdw1021`.`emp_employee_dim` `EMP_EMPLOYEE_DIM` JOIN `gosalesdw1021`.`go_branch_dim` `GO_BRANCH_DIM` ON `EMP_EMPLOYEE_DIM`.`branch_code` = `GO_BRANCH_DIM`.`branch_code` JOIN `gosalesdw1021`.`sls_sales_fact` `SLS_SALES_FACT` ON `SLS_SALES_FACT`.`employee_key` = `EMP_EMPLOYEE_DIM`.`employee_key` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `SLS_SALES_FACT`.`order_day_key` = `GO_TIME_DIM`.`day_key` JOIN 
@@ -4107,7 +4107,7 @@ SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`,
 
 
 -- id: 8076
-SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`, 
+     `SLS_PRODUCT_DIM`.`product_brand_key`, 
      `T1`.`product_brand_en`
  FROM
      `gosalesdw1021`.`sls_product_brand_lookup` `T1` JOIN `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` ON `T1`.`product_brand_code` = `SLS_PRODUCT_DIM`.`product_brand_code` 
@@ -4121,7 +4121,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`,
 
 
 -- id: 8486
-SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
+     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column1`
  FROM
      `gosalesdw1021`.`emp_employee_dim` `EMP_EMPLOYEE_DIM` JOIN `gosalesdw1021`.`go_branch_dim` `GO_BRANCH_DIM` ON `EMP_EMPLOYEE_DIM`.`branch_code` = `GO_BRANCH_DIM`.`branch_code` JOIN `gosalesdw1021`.`sls_sales_fact` `SLS_SALES_FACT` ON `SLS_SALES_FACT`.`employee_key` = `EMP_EMPLOYEE_DIM`.`employee_key` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `SLS_SALES_FACT`.`order_day_key` = `GO_TIME_DIM`.`day_key` JOIN 
@@ -4206,7 +4206,7 @@ SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`,
 
 
 -- id: 8510
-SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`, 
+     `SLS_PRODUCT_DIM`.`product_brand_key`, 
      `T1`.`product_brand_en`
  FROM
      `gosalesdw1021`.`sls_product_brand_lookup` `T1` JOIN `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` ON `T1`.`product_brand_code` = `SLS_PRODUCT_DIM`.`product_brand_code` 
@@ -4220,7 +4220,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`,
 
 
 -- id: 8920
-SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
+     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column1`
  FROM
      `gosalesdw1021`.`emp_employee_dim` `EMP_EMPLOYEE_DIM` JOIN `gosalesdw1021`.`go_branch_dim` `GO_BRANCH_DIM` ON `EMP_EMPLOYEE_DIM`.`branch_code` = `GO_BRANCH_DIM`.`branch_code` JOIN `gosalesdw1021`.`sls_sales_fact` `SLS_SALES_FACT` ON `SLS_SALES_FACT`.`employee_key` = `EMP_EMPLOYEE_DIM`.`employee_key` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `SLS_SALES_FACT`.`order_day_key` = `GO_TIME_DIM`.`day_key` JOIN 
@@ -4307,7 +4307,7 @@ SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`,
 
 
 -- id: 8944
-SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`, 
+     `SLS_PRODUCT_DIM`.`product_brand_key`, 
      `T1`.`product_brand_en`
  FROM
      `gosalesdw1021`.`sls_product_brand_lookup` `T1` JOIN `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` ON `T1`.`product_brand_code` = `SLS_PRODUCT_DIM`.`product_brand_code` 
@@ -4321,7 +4321,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_brand_key`,
 
 
 -- id: 9354
-SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
+     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column1`
  FROM
      `gosalesdw1021`.`emp_employee_dim` `EMP_EMPLOYEE_DIM` JOIN `gosalesdw1021`.`go_branch_dim` `GO_BRANCH_DIM` ON `EMP_EMPLOYEE_DIM`.`branch_code` = `GO_BRANCH_DIM`.`branch_code` JOIN `gosalesdw1021`.`sls_sales_fact` `SLS_SALES_FACT` ON `SLS_SALES_FACT`.`employee_key` = `EMP_EMPLOYEE_DIM`.`employee_key` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `SLS_SALES_FACT`.`order_day_key` = `GO_TIME_DIM`.`day_key` JOIN 
@@ -4408,7 +4408,7 @@ SELECT     `Product__brand_`.`PRODUCT_BRAND_KEY` AS `column0`,
 
 
 -- id: 9371
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -4430,7 +4430,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 9383
-SELECT     `GO_REGION_DIM`.`region_code` AS `column0`, 
+     `GO_REGION_DIM`.`region_code` AS `column0`, 
      `GO_REGION_DIM`.`region_en` AS `column1`
  FROM
      `gosalesdw1021`.`go_region_dim` `GO_REGION_DIM` 
@@ -4448,7 +4448,7 @@ SELECT     `GO_REGION_DIM`.`region_code` AS `column0`,
 
 
 -- id: 9398
-SELECT     `GO_REGION_DIM`.`region_code` AS `column0`, 
+     `GO_REGION_DIM`.`region_code` AS `column0`, 
      `GO_REGION_DIM`.`region_en` AS `column1`
  FROM
      `gosalesdw1021`.`go_region_dim` `GO_REGION_DIM` 
@@ -4468,7 +4468,7 @@ SELECT     `GO_REGION_DIM`.`region_code` AS `column0`,
 
 
 -- id: 9413
-SELECT     `GO_REGION_DIM`.`region_code` AS `column0`, 
+     `GO_REGION_DIM`.`region_code` AS `column0`, 
      `GO_REGION_DIM`.`region_en` AS `column1`, 
      `GO_REGION_DIM`.`country_code` AS `column2`, 
      `GO_REGION_DIM`.`country_en` AS `column3`
@@ -4494,7 +4494,7 @@ SELECT     `GO_REGION_DIM`.`region_code` AS `column0`,
 
 
 -- id: 9457
-SELECT     `GO_REGION_DIM`.`country_code` AS `column0`, 
+     `GO_REGION_DIM`.`country_code` AS `column0`, 
      `EMP_EMPLOYEE_DIM`.`employee_key` AS `column1`, 
      `EMP_EMPLOYEE_DIM`.`employee_name` AS `column2`, 
      `EMP_EMPLOYEE_DIM`.`employee_name_mb` AS `column3`, 
@@ -4523,7 +4523,7 @@ SELECT     `GO_REGION_DIM`.`country_code` AS `column0`,
 
 
 -- id: 9534
-SELECT     `GO_REGION_DIM`.`region_code` AS `column0`, 
+     `GO_REGION_DIM`.`region_code` AS `column0`, 
      `GO_REGION_DIM`.`country_code` AS `column1`, 
      `EMP_EMPLOYEE_DIM`.`employee_key` AS `column2`, 
      AVG(`EMP_SUMMARY_FACT`.`bonus`) AS `column4`, 
@@ -4550,7 +4550,7 @@ SELECT     `GO_REGION_DIM`.`region_code` AS `column0`,
 
 
 -- id: 9549
-SELECT     `T0`.`submission_key` AS `column0`, 
+     `T0`.`submission_key` AS `column0`, 
      `T0`.`submission_name_en` AS `column1`
  FROM
      `gosalesdw1021`.`fin_subm_dim` `T0` 
@@ -4571,7 +4571,7 @@ SELECT     `T0`.`submission_key` AS `column0`,
 
 
 -- id: 9565
-SELECT     `T2`.`quarter_key`, 
+     `T2`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' ')
  FROM
      `gosalesdw1021`.`go_time_quarter_lookup` `T2` 
@@ -4607,7 +4607,7 @@ SELECT     `T2`.`quarter_key`,
 
 
 -- id: 9650
-SELECT     `FIN_ACCOUNT_DIM`.`account_code1` AS `column0`, 
+     `FIN_ACCOUNT_DIM`.`account_code1` AS `column0`, 
      `T21`.`Account_name__level_1_` AS `column1`, 
      `FIN_ACCOUNT_DIM`.`account_code2` AS `column2`, 
      `T31`.`Account_name__level_2_` AS `column3`, 
@@ -4687,7 +4687,7 @@ SELECT     `FIN_ACCOUNT_DIM`.`account_code1` AS `column0`,
 
 
 -- id: 9715
-SELECT     `FIN_ACCOUNT_DIM`.`account_code1` AS `column0`, 
+     `FIN_ACCOUNT_DIM`.`account_code1` AS `column0`, 
      `FIN_ACCOUNT_DIM`.`account_code2` AS `column1`, 
      `FIN_ACCOUNT_DIM`.`account_code3` AS `column2`, 
      `FIN_ACCOUNT_DIM`.`account_code4` AS `column3`, 
@@ -4755,7 +4755,7 @@ SELECT     `FIN_ACCOUNT_DIM`.`account_code1` AS `column0`,
 
 
 -- id: 9780
-SELECT     `FIN_ACCOUNT_DIM`.`account_code1` AS `column0`, 
+     `FIN_ACCOUNT_DIM`.`account_code1` AS `column0`, 
      `FIN_ACCOUNT_DIM`.`account_code2` AS `column1`, 
      `FIN_ACCOUNT_DIM`.`account_code3` AS `column2`, 
      `T4`.`submission_key` AS `column3`, 
@@ -4817,7 +4817,7 @@ SELECT     `FIN_ACCOUNT_DIM`.`account_code1` AS `column0`,
 
 
 -- id: 9846
-SELECT     `FIN_ACCOUNT_DIM`.`account_code1` AS `column0`, 
+     `FIN_ACCOUNT_DIM`.`account_code1` AS `column0`, 
      `FIN_ACCOUNT_DIM`.`account_code2` AS `column1`, 
      `T4`.`submission_key` AS `column2`, 
      CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column3`, 
@@ -4868,7 +4868,7 @@ SELECT     `FIN_ACCOUNT_DIM`.`account_code1` AS `column0`,
 
 
 -- id: 9858
-SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
+     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
      `EMP_EMPLOYEE_DIM`.`manager1` AS `column1`, 
      `EMP_EMPLOYEE_DIM`.`manager_mb1` AS `column2`, 
      `EMP_EMPLOYEE_DIM`.`manager_code2` AS `column3`, 
@@ -4946,7 +4946,7 @@ SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`,
 
 
 -- id: 9870
-SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
+     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
      `EMP_EMPLOYEE_DIM`.`manager_code2` AS `column1`, 
      `EMP_EMPLOYEE_DIM`.`manager_code3` AS `column2`, 
      `EMP_EMPLOYEE_DIM`.`manager_code4` AS `column3`, 
@@ -4982,7 +4982,7 @@ SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`,
 
 
 -- id: 9900
-SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
+     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
      `EMP_EMPLOYEE_DIM`.`manager_code2` AS `column1`, 
      `EMP_EMPLOYEE_DIM`.`manager_code3` AS `column2`, 
      `EMP_EMPLOYEE_DIM`.`manager_code4` AS `column3`, 
@@ -5025,7 +5025,7 @@ SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`,
 
 
 -- id: 9930
-SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
+     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
      `EMP_EMPLOYEE_DIM`.`manager_code2` AS `column1`, 
      `EMP_EMPLOYEE_DIM`.`manager_code3` AS `column2`, 
      `EMP_EMPLOYEE_DIM`.`manager_code4` AS `column3`, 
@@ -5068,7 +5068,7 @@ SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`,
 
 
 -- id: 9945
-SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
+     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
      `EMP_EMPLOYEE_DIM`.`manager1` AS `column1`, 
      `EMP_EMPLOYEE_DIM`.`manager_mb1` AS `column2`, 
      `EMP_EMPLOYEE_DIM`.`manager_code2` AS `column3`, 
@@ -5145,7 +5145,7 @@ SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`,
 
 
 -- id: 9965
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -5169,7 +5169,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 10007
-SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
+     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
      `EMP_EMPLOYEE_DIM`.`manager_code2` AS `column1`, 
      `EMP_EMPLOYEE_DIM`.`manager_code3` AS `column2`, 
      `EMP_EMPLOYEE_DIM`.`manager_code4` AS `column3`, 
@@ -5200,7 +5200,7 @@ SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`,
 
 
 -- id: 10019
-SELECT     `T0`.`expense_group_code` AS `column0`, 
+     `T0`.`expense_group_code` AS `column0`, 
      `T0`.`expense_group_en` AS `column1`
  FROM
      `gosalesdw1021`.`emp_expense_type_dim` `T0` 
@@ -5218,7 +5218,7 @@ SELECT     `T0`.`expense_group_code` AS `column0`,
 
 
 -- id: 10077
-SELECT     `T3`.`expense_group_code` AS `column0`, 
+     `T3`.`expense_group_code` AS `column0`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column1`, 
      SUM(`EMP_EXPENSE_FACT`.`expense_total`) AS `column2`
  FROM
@@ -5241,7 +5241,7 @@ SELECT     `T3`.`expense_group_code` AS `column0`,
 
 
 -- id: 10089
-SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
+     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
      `EMP_EMPLOYEE_DIM`.`manager1` AS `column1`, 
      `EMP_EMPLOYEE_DIM`.`manager_mb1` AS `column2`, 
      `EMP_EMPLOYEE_DIM`.`manager_code2` AS `column3`, 
@@ -5318,7 +5318,7 @@ SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`,
 
 
 -- id: 10101
-SELECT     `T0`.`expense_group_code` AS `column0`, 
+     `T0`.`expense_group_code` AS `column0`, 
      `T0`.`expense_group_en` AS `column1`
  FROM
      `gosalesdw1021`.`emp_expense_type_dim` `T0` 
@@ -5336,7 +5336,7 @@ SELECT     `T0`.`expense_group_code` AS `column0`,
 
 
 -- id: 10121
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -5360,7 +5360,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 10151
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `T2`.`Position_name__level_1_` AS `column1`
  FROM
      (
@@ -5384,7 +5384,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 10198
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `T3`.`Position_name__level_2_` AS `column2`, 
      `T21`.`Position_name__level_1_` AS `C_sortColumn0`
@@ -5421,7 +5421,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 10263
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `T21`.`Position_name__level_3_` AS `column3`, 
@@ -5472,7 +5472,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 10345
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `EMP_POSITION_DIM`.`position_code` AS `column3`, 
@@ -5531,7 +5531,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 10420
-SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
+     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
      `EMP_EMPLOYEE_DIM`.`manager_code2` AS `column1`, 
      `EMP_EMPLOYEE_DIM`.`manager_code3` AS `column2`, 
      `EMP_EMPLOYEE_DIM`.`manager_code4` AS `column3`, 
@@ -5571,7 +5571,7 @@ SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`,
 
 
 -- id: 10471
-SELECT     `T3`.`organization_code1` AS `column0`, 
+     `T3`.`organization_code1` AS `column0`, 
      `T21`.`Organization_name__level_1_` AS `column1`
  FROM
      (
@@ -5622,7 +5622,7 @@ SELECT     `T3`.`organization_code1` AS `column0`,
 
 
 -- id: 10538
-SELECT     `T31`.`organization_code1`, 
+     `T31`.`organization_code1`, 
      `T31`.`Sum1`, 
      `T31`.`Sum11`, 
      `T31`.`column3`
@@ -5669,7 +5669,7 @@ SELECT     `T31`.`organization_code1`,
 
 
 -- id: 10561
-SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      concat(`T1`.`quarter_en`, ' '), 
      `GO_TIME_DIM`.`current_year`, 
@@ -5689,7 +5689,7 @@ SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)),
 
 
 -- id: 10584
-SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      concat(`T1`.`quarter_en`, ' '), 
      `GO_TIME_DIM`.`current_year`, 
@@ -5710,7 +5710,7 @@ SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)),
 
 
 -- id: 10651
-SELECT     `T31`.`organization_code1`, 
+     `T31`.`organization_code1`, 
      `T31`.`column1`
  FROM
      (
@@ -5753,7 +5753,7 @@ SELECT     `T31`.`organization_code1`,
 
 
 -- id: 10702
-SELECT     `T3`.`organization_code1` AS `column0`, 
+     `T3`.`organization_code1` AS `column0`, 
      `T21`.`Organization_name__level_1_` AS `column1`
  FROM
      (
@@ -5804,7 +5804,7 @@ SELECT     `T3`.`organization_code1` AS `column0`,
 
 
 -- id: 10769
-SELECT     `T31`.`organization_code1`, 
+     `T31`.`organization_code1`, 
      `T31`.`Sum1`, 
      `T31`.`Sum11`, 
      `T31`.`column3`
@@ -5851,7 +5851,7 @@ SELECT     `T31`.`organization_code1`,
 
 
 -- id: 10836
-SELECT     `T31`.`organization_code1`, 
+     `T31`.`organization_code1`, 
      `T31`.`column1`
  FROM
      (
@@ -5894,7 +5894,7 @@ SELECT     `T31`.`organization_code1`,
 
 
 -- id: 10887
-SELECT     `T3`.`organization_code1` AS `column0`, 
+     `T3`.`organization_code1` AS `column0`, 
      `T21`.`Organization_name__level_1_` AS `column1`
  FROM
      (
@@ -5945,7 +5945,7 @@ SELECT     `T3`.`organization_code1` AS `column0`,
 
 
 -- id: 10954
-SELECT     `T31`.`organization_code1`, 
+     `T31`.`organization_code1`, 
      `T31`.`Sum1`, 
      `T31`.`Sum11`, 
      `T31`.`column3`
@@ -5992,7 +5992,7 @@ SELECT     `T31`.`organization_code1`,
 
 
 -- id: 11021
-SELECT     `T31`.`organization_code1`, 
+     `T31`.`organization_code1`, 
      `T31`.`column1`
  FROM
      (
@@ -6035,7 +6035,7 @@ SELECT     `T31`.`organization_code1`,
 
 
 -- id: 11072
-SELECT     `T3`.`organization_code1` AS `column0`, 
+     `T3`.`organization_code1` AS `column0`, 
      `T21`.`Organization_name__level_1_` AS `column1`
  FROM
      (
@@ -6086,7 +6086,7 @@ SELECT     `T3`.`organization_code1` AS `column0`,
 
 
 -- id: 11139
-SELECT     `T31`.`organization_code1`, 
+     `T31`.`organization_code1`, 
      `T31`.`Sum1`, 
      `T31`.`Sum11`, 
      `T31`.`column3`
@@ -6133,7 +6133,7 @@ SELECT     `T31`.`organization_code1`,
 
 
 -- id: 11206
-SELECT     `T31`.`organization_code1`, 
+     `T31`.`organization_code1`, 
      `T31`.`column1`
  FROM
      (
@@ -6176,7 +6176,7 @@ SELECT     `T31`.`organization_code1`,
 
 
 -- id: 11257
-SELECT     `T3`.`organization_code1` AS `column0`, 
+     `T3`.`organization_code1` AS `column0`, 
      `T21`.`Organization_name__level_1_` AS `column1`
  FROM
      (
@@ -6227,7 +6227,7 @@ SELECT     `T3`.`organization_code1` AS `column0`,
 
 
 -- id: 11324
-SELECT     `T31`.`organization_code1`, 
+     `T31`.`organization_code1`, 
      `T31`.`Sum1`, 
      `T31`.`Sum11`, 
      `T31`.`column3`
@@ -6274,7 +6274,7 @@ SELECT     `T31`.`organization_code1`,
 
 
 -- id: 11391
-SELECT     `T31`.`organization_code1`, 
+     `T31`.`organization_code1`, 
      `T31`.`column1`
  FROM
      (
@@ -6317,7 +6317,7 @@ SELECT     `T31`.`organization_code1`,
 
 
 -- id: 11418
-SELECT     AVG(`T0`.`days_to_fill`) AS `column0`
+     AVG(`T0`.`days_to_fill`) AS `column0`
  FROM
      `gosalesdw1021`.`emp_recruitment_fact` `T0` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `T0`.`post_day_key` = `GO_TIME_DIM`.`day_key` 
  WHERE 
@@ -6331,7 +6331,7 @@ SELECT     AVG(`T0`.`days_to_fill`) AS `column0`
 
 
 -- id: 11449
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `T2`.`Position_name__level_1_` AS `column1`
  FROM
      (
@@ -6357,7 +6357,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 11497
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `T3`.`Position_name__level_2_` AS `column2`, 
      `T21`.`Position_name__level_1_` AS `C_sortColumn0`
@@ -6396,7 +6396,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 11563
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `T21`.`Position_name__level_3_` AS `column3`, 
@@ -6449,7 +6449,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 11646
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `EMP_POSITION_DIM`.`position_code` AS `column3`, 
@@ -6508,7 +6508,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 11688
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `EMP_POSITION_DIM`.`position_code` AS `column3`, 
@@ -6531,7 +6531,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 11719
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `T2`.`Position_name__level_1_` AS `column1`
  FROM
      (
@@ -6557,7 +6557,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 11767
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `T3`.`Position_name__level_2_` AS `column2`, 
      `T21`.`Position_name__level_1_` AS `C_sortColumn0`
@@ -6596,7 +6596,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 11833
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `T21`.`Position_name__level_3_` AS `column3`, 
@@ -6649,7 +6649,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 11875
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      AVG(`T0`.`days_to_fill`) AS `column3`
@@ -6670,7 +6670,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 11887
-SELECT     `T0`.`campaign_code` AS `column0`, 
+     `T0`.`campaign_code` AS `column0`, 
      `T0`.`campaign_name_en` AS `column1`
  FROM
      `gosalesdw1021`.`mrk_campaign_lookup` `T0` 
@@ -6688,7 +6688,7 @@ SELECT     `T0`.`campaign_code` AS `column0`,
 
 
 -- id: 11902
-SELECT     `T0`.`campaign_code` AS `column0`, 
+     `T0`.`campaign_code` AS `column0`, 
      `T0`.`campaign_name_en` AS `column1`
  FROM
      `gosalesdw1021`.`mrk_campaign_lookup` `T0` 
@@ -6712,7 +6712,7 @@ SELECT     `T0`.`campaign_code` AS `column0`,
 
 
 -- id: 11931
-SELECT     `T1`.`campaign_code` AS `column0`, 
+     `T1`.`campaign_code` AS `column0`, 
      `T1`.`campaign_name_en` AS `column1`, 
      `MRK_PROMOTION_DIM`.`promotion_key` AS `column2`, 
      `MRK_PROMOTION_DIM`.`promotion_name_en` AS `column3`
@@ -6742,7 +6742,7 @@ SELECT     `T1`.`campaign_code` AS `column0`,
 
 
 -- id: 11973
-SELECT     `T11`.`campaign_code` AS `column0`, 
+     `T11`.`campaign_code` AS `column0`, 
      `MRK_PROMOTION_DIM`.`promotion_key` AS `column1`, 
      SUM(`T2`.`promotion_plan_revenue`) AS `column2`
  FROM
@@ -6764,7 +6764,7 @@ SELECT     `T11`.`campaign_code` AS `column0`,
 
 
 -- id: 11993
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -6789,7 +6789,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 12008
-SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` 
  WHERE 
@@ -6807,7 +6807,7 @@ SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 12027
-SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      concat(`T1`.`quarter_en`, ' '), 
      `GO_TIME_DIM`.`current_year`
@@ -6824,7 +6824,7 @@ SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)),
 
 
 -- id: 12039
-SELECT     `T0`.`campaign_code` AS `column0`, 
+     `T0`.`campaign_code` AS `column0`, 
      `T0`.`campaign_name_en` AS `column1`
  FROM
      `gosalesdw1021`.`mrk_campaign_lookup` `T0` 
@@ -6842,7 +6842,7 @@ SELECT     `T0`.`campaign_code` AS `column0`,
 
 
 -- id: 12059
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -6866,7 +6866,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 12086
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
      `GO_TIME_DIM0`.`current_year`
@@ -6891,7 +6891,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)),
 
 
 -- id: 12144
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T41`.`product_line_en`, 
      `SLS_PRODUCT_DIM`.`product_type_key`, 
      `T5`.`product_type_en`, 
@@ -6920,7 +6920,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 12298
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      `Product`.`Product_type_key` AS `column1`, 
      `Product`.`Base_product_key` AS `column2`, 
      SUM(`T10`.`sale_total`) AS `column3`
@@ -6959,7 +6959,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 12452
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      `Product`.`Product_type_key` AS `column1`, 
      `Product`.`Base_product_key` AS `column2`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column3`
@@ -6998,7 +6998,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 12510
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T41`.`product_line_en`, 
      `SLS_PRODUCT_DIM`.`product_type_key`, 
      `T5`.`product_type_en`, 
@@ -7027,7 +7027,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 12538
-SELECT     `T1`.`campaign_code` AS `column0`, 
+     `T1`.`campaign_code` AS `column0`, 
      `T1`.`campaign_name_en` AS `column1`, 
      `MRK_PROMOTION_DIM`.`promotion_key` AS `column2`, 
      `MRK_PROMOTION_DIM`.`promotion_name_en` AS `column3`
@@ -7051,7 +7051,7 @@ SELECT     `T1`.`campaign_code` AS `column0`,
 
 
 -- id: 12731
-SELECT     `T13`.`campaign_code` AS `column0`, 
+     `T13`.`campaign_code` AS `column0`, 
      `MRK_PROMOTION_DIM`.`promotion_key` AS `column1`, 
      `Product`.`Product_line_code` AS `column2`, 
      `Product`.`Product_type_key` AS `column3`, 
@@ -7110,7 +7110,7 @@ SELECT     `T13`.`campaign_code` AS `column0`,
 
 
 -- id: 12929
-SELECT     `T14`.`campaign_code` AS `column0`, 
+     `T14`.`campaign_code` AS `column0`, 
      `MRK_PROMOTION_DIM`.`promotion_key` AS `column1`, 
      `Product`.`Product_line_code` AS `column2`, 
      `Product`.`Product_type_key` AS `column3`, 
@@ -7177,7 +7177,7 @@ SELECT     `T14`.`campaign_code` AS `column0`,
 
 
 -- id: 12949
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -7202,7 +7202,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 12976
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
      `GO_TIME_DIM0`.`current_year`
@@ -7228,7 +7228,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)),
 
 
 -- id: 13011
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`, 
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`, 
      `GO_TIME_DIM0`.`quarter_key` AS `column1`, 
      SUM(`T2`.`quantity_shipped`) AS `column2`
  FROM
@@ -7259,7 +7259,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`,
 
 
 -- id: 13038
-SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`, 
+     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`, 
      `GO_TIME_DIM`.`quarter_key` AS `column1`, 
      SUM(`SLS_SALES_FACT`.`quantity`) AS `column2`
  FROM
@@ -7278,7 +7278,7 @@ SELECT     CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column0`,
 
 
 -- id: 13046
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7296,7 +7296,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13054
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7314,7 +7314,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13062
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7332,7 +7332,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13070
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7350,7 +7350,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13078
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7368,7 +7368,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13086
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7386,7 +7386,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13094
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7404,7 +7404,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13102
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7422,7 +7422,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13110
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7440,7 +7440,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13118
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7458,7 +7458,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13126
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7476,7 +7476,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13134
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7494,7 +7494,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13142
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7512,7 +7512,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13150
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7530,7 +7530,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13158
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7548,7 +7548,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13166
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7566,7 +7566,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13174
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7584,7 +7584,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13182
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7602,7 +7602,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13190
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7620,7 +7620,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13198
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -7638,7 +7638,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 13232
-SELECT     `T21`.`C`, 
+     `T21`.`C`, 
      `T21`.`quarter_key`, 
      `T21`.`column2`
  FROM
@@ -7698,7 +7698,7 @@ SELECT     `T21`.`C`,
 
 
 -- id: 13266
-SELECT     `T21`.`C`, 
+     `T21`.`C`, 
      `T21`.`quarter_key`, 
      `T21`.`column2`
  FROM
@@ -7758,7 +7758,7 @@ SELECT     `T21`.`C`,
 
 
 -- id: 13283
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -7780,7 +7780,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 13349
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `T31`.`Position_name__level_1_` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column2`, 
      `T4`.`Position_name__level_2_` AS `column3`, 
@@ -7841,7 +7841,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 13364
-SELECT     `T0`.`recruitment_type_code` AS `column0`, 
+     `T0`.`recruitment_type_code` AS `column0`, 
      `T0`.`recruitment_type_en` AS `column1`
  FROM
      `gosalesdw1021`.`emp_recruitment_dim` `T0` 
@@ -7861,7 +7861,7 @@ SELECT     `T0`.`recruitment_type_code` AS `column0`,
 
 
 -- id: 13422
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `T2`.`recruitment_type_code` AS `column3`, 
@@ -7893,7 +7893,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 13488
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `T31`.`Position_name__level_1_` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column2`, 
      `T4`.`Position_name__level_2_` AS `column3`, 
@@ -7954,7 +7954,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 13546
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `T2`.`recruitment_type_code` AS `column3`, 
@@ -7986,7 +7986,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 13612
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `T31`.`Position_name__level_1_` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column2`, 
      `T4`.`Position_name__level_2_` AS `column3`, 
@@ -8047,7 +8047,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 13670
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `T2`.`recruitment_type_code` AS `column3`, 
@@ -8079,7 +8079,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 13736
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `T31`.`Position_name__level_1_` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column2`, 
      `T4`.`Position_name__level_2_` AS `column3`, 
@@ -8140,7 +8140,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 13794
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `T2`.`recruitment_type_code` AS `column3`, 
@@ -8172,7 +8172,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 13860
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `T31`.`Position_name__level_1_` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column2`, 
      `T4`.`Position_name__level_2_` AS `column3`, 
@@ -8233,7 +8233,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 13918
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `T2`.`recruitment_type_code` AS `column3`, 
@@ -8265,7 +8265,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 13984
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `T31`.`Position_name__level_1_` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column2`, 
      `T4`.`Position_name__level_2_` AS `column3`, 
@@ -8326,7 +8326,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 14042
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `T2`.`recruitment_type_code` AS `column3`, 
@@ -8358,7 +8358,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 14108
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `T31`.`Position_name__level_1_` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column2`, 
      `T4`.`Position_name__level_2_` AS `column3`, 
@@ -8419,7 +8419,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 14166
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `T2`.`recruitment_type_code` AS `column3`, 
@@ -8451,7 +8451,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 14232
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `T31`.`Position_name__level_1_` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column2`, 
      `T4`.`Position_name__level_2_` AS `column3`, 
@@ -8512,7 +8512,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 14290
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `T2`.`recruitment_type_code` AS `column3`, 
@@ -8544,7 +8544,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 14348
-SELECT     `T2`.`recruitment_type_code` AS `column0`, 
+     `T2`.`recruitment_type_code` AS `column0`, 
      AVG(`T01`.`days_to_fill`) AS `column1`
  FROM
      `gosalesdw1021`.`emp_recruitment_fact` `T01` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `T01`.`post_day_key` = `GO_TIME_DIM`.`day_key` JOIN `gosalesdw1021`.`emp_recruitment_dim` `T2` ON `T2`.`recruitment_medium_key` = `T01`.`recruitment_medium_key` JOIN `gosalesdw1021`.`emp_position_dim` `EMP_POSITION_DIM` ON `T01`.`position_key` = `EMP_POSITION_DIM`.`position_key` 
@@ -8567,7 +8567,7 @@ SELECT     `T2`.`recruitment_type_code` AS `column0`,
 
 
 -- id: 14414
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `T31`.`Position_name__level_1_` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column2`, 
      `T4`.`Position_name__level_2_` AS `column3`, 
@@ -8628,7 +8628,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 14472
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `T2`.`recruitment_type_code` AS `column3`, 
@@ -8660,7 +8660,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 14523
-SELECT     `T3`.`organization_code1` AS `column0`, 
+     `T3`.`organization_code1` AS `column0`, 
      `T21`.`Organization_name__level_1_` AS `column1`
  FROM
      (
@@ -8715,7 +8715,7 @@ SELECT     `T3`.`organization_code1` AS `column0`,
 
 
 -- id: 14554
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `T2`.`Position_name__level_1_` AS `column1`
  FROM
      (
@@ -8746,7 +8746,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 14602
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `T3`.`Position_name__level_2_` AS `column2`, 
      `T21`.`Position_name__level_1_` AS `C_sortColumn0`
@@ -8790,7 +8790,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 14668
-SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
+     `EMP_POSITION_DIM`.`position_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column2`, 
      `T21`.`Position_name__level_3_` AS `column3`, 
@@ -8848,7 +8848,7 @@ SELECT     `EMP_POSITION_DIM`.`position_code1` AS `column0`,
 
 
 -- id: 14747
-SELECT     `D1`.`C0`, 
+     `D1`.`C0`, 
      `D1`.`C1`, 
      `D1`.`C2`, 
      `D1`.`C3`, 
@@ -8916,7 +8916,7 @@ SELECT     `D1`.`C0`,
 
 
 -- id: 14842
-SELECT     `T01`.`organization_code1` AS `column0`, 
+     `T01`.`organization_code1` AS `column0`, 
      `EMP_POSITION_DIM`.`position_code1` AS `column1`, 
      `EMP_POSITION_DIM`.`position_code2` AS `column2`, 
      `EMP_POSITION_DIM`.`position_code3` AS `column3`, 
@@ -8964,7 +8964,7 @@ SELECT     `T01`.`organization_code1` AS `column0`,
 
 
 -- id: 14954
-SELECT     `Product`.`Product_line_code`, 
+     `Product`.`Product_line_code`, 
      `Product`.`Product_line`, 
      `Product`.`Product_type_key`, 
      `Product`.`Product_type`, 
@@ -9009,7 +9009,7 @@ SELECT     `Product`.`Product_line_code`,
 
 
 -- id: 14966
-SELECT     `T0`.`order_method_key` AS `column0`, 
+     `T0`.`order_method_key` AS `column0`, 
      `T0`.`order_method_en` AS `column1`
  FROM
      `gosalesdw1021`.`sls_order_method_dim` `T0` 
@@ -9027,7 +9027,7 @@ SELECT     `T0`.`order_method_key` AS `column0`,
 
 
 -- id: 15140
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      `Product`.`Product_type_key` AS `column1`, 
      `Product`.`Base_product_key` AS `column2`, 
      `Product`.`Product_key` AS `column3`, 
@@ -9070,7 +9070,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 15308
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      `Product`.`Product_type_key` AS `column1`, 
      `Product`.`Base_product_key` AS `column2`, 
      `Product`.`Product_key` AS `column3`, 
@@ -9113,7 +9113,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 15312
-SELECT     `GO_TIME_DIM`.`day_date`, 
+     `GO_TIME_DIM`.`day_date`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4))
  FROM
      `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM`
@@ -9123,7 +9123,7 @@ SELECT     `GO_TIME_DIM`.`day_date`,
 
 
 -- id: 15334
-SELECT     `GO_TIME_DIM`.`day_date`, 
+     `GO_TIME_DIM`.`day_date`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      concat(`T1`.`quarter_en`, ' '), 
@@ -9138,7 +9138,7 @@ SELECT     `GO_TIME_DIM`.`day_date`,
 
 
 -- id: 15338
-SELECT     `GO_TIME_DIM`.`day_date`, 
+     `GO_TIME_DIM`.`day_date`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`month_key`, 
      concat(`GO_TIME_DIM`.`month_en`, ' '), 
@@ -9152,7 +9152,7 @@ SELECT     `GO_TIME_DIM`.`day_date`,
 
 
 -- id: 15346
-SELECT     `SLS_RETAILER_DIM`.`retailer_type_code`, 
+     `SLS_RETAILER_DIM`.`retailer_type_code`, 
      `SLS_RETAILER_DIM`.`retailer_type_en`
  FROM
      `gosalesdw1021`.`sls_rtl_dim` `SLS_RETAILER_DIM` 
@@ -9166,7 +9166,7 @@ SELECT     `SLS_RETAILER_DIM`.`retailer_type_code`,
 
 
 -- id: 15358
-SELECT     `T0`.`return_reason_key` AS `column0`, 
+     `T0`.`return_reason_key` AS `column0`, 
      `T0`.`reason_description_en` AS `column1`
  FROM
      `gosalesdw1021`.`dist_return_reason_dim` `T0` 
@@ -9184,7 +9184,7 @@ SELECT     `T0`.`return_reason_key` AS `column0`,
 
 
 -- id: 15453
-SELECT     `GO_TIME_DIM`.`day_date`, 
+     `GO_TIME_DIM`.`day_date`, 
      `Retailer`.`Retailer_type_code`, 
      `T8`.`return_reason_key`, 
      `T61`.`return_quantity`
@@ -9229,7 +9229,7 @@ SELECT     `GO_TIME_DIM`.`day_date`,
 
 
 -- id: 15462
-SELECT     `T0`.`REGION_CODE`, 
+     `T0`.`REGION_CODE`, 
      `T0`.`Region`
  FROM
      (
@@ -9257,7 +9257,7 @@ SELECT     `T0`.`REGION_CODE`,
 
 
 -- id: 15486
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T2`.`product_line_en`
  FROM
      `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` JOIN `gosalesdw1021`.`sls_product_line_lookup` `T2` ON `SLS_PRODUCT_DIM`.`product_line_code` = `T2`.`product_line_code` 
@@ -9271,7 +9271,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 15669
-SELECT     `GO_TIME_DIM`.`day_date`, 
+     `GO_TIME_DIM`.`day_date`, 
      `Product`.`Product_line_code`, 
      `Retailer_site`.`Region_code`, 
      `T13`.`return_quantity`
@@ -9321,7 +9321,7 @@ SELECT     `GO_TIME_DIM`.`day_date`,
 
 
 -- id: 15684
-SELECT     `T0`.`return_reason_key` AS `column0`, 
+     `T0`.`return_reason_key` AS `column0`, 
      `T0`.`reason_description_en` AS `column1`
  FROM
      `gosalesdw1021`.`dist_return_reason_dim` `T0` 
@@ -9345,7 +9345,7 @@ SELECT     `T0`.`return_reason_key` AS `column0`,
 
 
 -- id: 15726
-SELECT     `T2`.`return_reason_key` AS `column0`, 
+     `T2`.`return_reason_key` AS `column0`, 
      SUM(`T01`.`return_quantity`) AS `column1`
  FROM
      `gosalesdw1021`.`dist_returned_items_fact` `T01` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `T01`.`day_key` = `GO_TIME_DIM`.`day_key` JOIN `gosalesdw1021`.`dist_return_reason_dim` `T2` ON `T2`.`return_reason_key` = `T01`.`return_reason_key` 
@@ -9363,7 +9363,7 @@ SELECT     `T2`.`return_reason_key` AS `column0`,
 
 
 -- id: 15768
-SELECT     `T2`.`return_reason_key` AS `column0`, 
+     `T2`.`return_reason_key` AS `column0`, 
      SUM(`T01`.`return_quantity`) AS `column1`
  FROM
      `gosalesdw1021`.`dist_returned_items_fact` `T01` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `T01`.`day_key` = `GO_TIME_DIM`.`day_key` JOIN `gosalesdw1021`.`dist_return_reason_dim` `T2` ON `T2`.`return_reason_key` = `T01`.`return_reason_key` 
@@ -9381,7 +9381,7 @@ SELECT     `T2`.`return_reason_key` AS `column0`,
 
 
 -- id: 15810
-SELECT     `T2`.`return_reason_key` AS `column0`, 
+     `T2`.`return_reason_key` AS `column0`, 
      SUM(`T01`.`return_quantity`) AS `column1`
  FROM
      `gosalesdw1021`.`dist_returned_items_fact` `T01` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `T01`.`day_key` = `GO_TIME_DIM`.`day_key` JOIN `gosalesdw1021`.`dist_return_reason_dim` `T2` ON `T2`.`return_reason_key` = `T01`.`return_reason_key` 
@@ -9399,7 +9399,7 @@ SELECT     `T2`.`return_reason_key` AS `column0`,
 
 
 -- id: 15852
-SELECT     `T2`.`return_reason_key` AS `column0`, 
+     `T2`.`return_reason_key` AS `column0`, 
      SUM(`T01`.`return_quantity`) AS `column1`
  FROM
      `gosalesdw1021`.`dist_returned_items_fact` `T01` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `T01`.`day_key` = `GO_TIME_DIM`.`day_key` JOIN `gosalesdw1021`.`dist_return_reason_dim` `T2` ON `T2`.`return_reason_key` = `T01`.`return_reason_key` 
@@ -9417,7 +9417,7 @@ SELECT     `T2`.`return_reason_key` AS `column0`,
 
 
 -- id: 15894
-SELECT     `T2`.`return_reason_key` AS `column0`, 
+     `T2`.`return_reason_key` AS `column0`, 
      SUM(`T01`.`return_quantity`) AS `column1`
  FROM
      `gosalesdw1021`.`dist_returned_items_fact` `T01` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `T01`.`day_key` = `GO_TIME_DIM`.`day_key` JOIN `gosalesdw1021`.`dist_return_reason_dim` `T2` ON `T2`.`return_reason_key` = `T01`.`return_reason_key` 
@@ -9435,7 +9435,7 @@ SELECT     `T2`.`return_reason_key` AS `column0`,
 
 
 -- id: 15921
-SELECT     SUM(`T0`.`return_quantity`) AS `column0`
+     SUM(`T0`.`return_quantity`) AS `column0`
  FROM
      `gosalesdw1021`.`dist_returned_items_fact` `T0` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `T0`.`day_key` = `GO_TIME_DIM`.`day_key` 
  WHERE 
@@ -9449,7 +9449,7 @@ SELECT     SUM(`T0`.`return_quantity`) AS `column0`
 
 
 -- id: 15948
-SELECT     SUM(`SLS_SALES_FACT`.`quantity`) AS `column0`
+     SUM(`SLS_SALES_FACT`.`quantity`) AS `column0`
  FROM
      `gosalesdw1021`.`sls_sales_fact` `SLS_SALES_FACT` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `SLS_SALES_FACT`.`order_day_key` = `GO_TIME_DIM`.`day_key` 
  WHERE 
@@ -9463,7 +9463,7 @@ SELECT     SUM(`SLS_SALES_FACT`.`quantity`) AS `column0`
 
 
 -- id: 15963
-SELECT     `T0`.`return_reason_key` AS `column0`, 
+     `T0`.`return_reason_key` AS `column0`, 
      `T0`.`reason_description_en` AS `column1`
  FROM
      `gosalesdw1021`.`dist_return_reason_dim` `T0` 
@@ -9484,7 +9484,7 @@ SELECT     `T0`.`return_reason_key` AS `column0`,
 
 
 -- id: 15980
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -9506,7 +9506,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 16004
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T2`.`product_line_en`
  FROM
      `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` JOIN `gosalesdw1021`.`sls_product_line_lookup` `T2` ON `SLS_PRODUCT_DIM`.`product_line_code` = `T2`.`product_line_code` 
@@ -9520,7 +9520,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 16158
-SELECT     `T101`.`return_reason_key` AS `column0`, 
+     `T101`.`return_reason_key` AS `column0`, 
      `Product`.`Product_line_code` AS `column1`, 
      SUM(`T11`.`return_quantity`) AS `column2`
  FROM
@@ -9556,7 +9556,7 @@ SELECT     `T101`.`return_reason_key` AS `column0`,
 
 
 -- id: 16328
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column1`, 
      SUM(`T101`.`return_quantity`) AS `column2`
  FROM
@@ -9592,7 +9592,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 16340
-SELECT     `T0`.`order_method_key` AS `column0`, 
+     `T0`.`order_method_key` AS `column0`, 
      `T0`.`order_method_en` AS `column1`
  FROM
      `gosalesdw1021`.`sls_order_method_dim` `T0` 
@@ -9610,7 +9610,7 @@ SELECT     `T0`.`order_method_key` AS `column0`,
 
 
 -- id: 16508
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      `T101`.`order_method_key` AS `column1`, 
      SUM(`T91`.`return_quantity`) AS `column2`
  FROM
@@ -9644,7 +9644,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 16520
-SELECT     `T0`.`order_method_key` AS `column0`, 
+     `T0`.`order_method_key` AS `column0`, 
      `T0`.`order_method_en` AS `column1`
  FROM
      `gosalesdw1021`.`sls_order_method_dim` `T0` 
@@ -9662,7 +9662,7 @@ SELECT     `T0`.`order_method_key` AS `column0`,
 
 
 -- id: 16535
-SELECT     `T0`.`return_reason_key` AS `column0`, 
+     `T0`.`return_reason_key` AS `column0`, 
      `T0`.`reason_description_en` AS `column1`
  FROM
      `gosalesdw1021`.`dist_return_reason_dim` `T0` 
@@ -9683,7 +9683,7 @@ SELECT     `T0`.`return_reason_key` AS `column0`,
 
 
 -- id: 16552
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -9705,7 +9705,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 16576
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T2`.`product_line_en`
  FROM
      `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` JOIN `gosalesdw1021`.`sls_product_line_lookup` `T2` ON `SLS_PRODUCT_DIM`.`product_line_code` = `T2`.`product_line_code` 
@@ -9719,7 +9719,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 16746
-SELECT     `T12`.`return_reason_key` AS `column0`, 
+     `T12`.`return_reason_key` AS `column0`, 
      `Product`.`Product_line_code` AS `column1`, 
      SUM(`T101`.`return_quantity`) AS `column2`
  FROM
@@ -9756,7 +9756,7 @@ SELECT     `T12`.`return_reason_key` AS `column0`,
 
 
 -- id: 16933
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column1`, 
      SUM(`T101`.`return_quantity`) AS `column2`
  FROM
@@ -9793,7 +9793,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 16957
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T2`.`product_line_en`
  FROM
      `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` JOIN `gosalesdw1021`.`sls_product_line_lookup` `T2` ON `SLS_PRODUCT_DIM`.`product_line_code` = `T2`.`product_line_code` 
@@ -9807,7 +9807,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 16974
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -9829,7 +9829,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 17000
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
      `GO_TIME_DIM0`.`current_year`
@@ -9852,7 +9852,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)),
 
 
 -- id: 17182
-SELECT     `T01`.`organization_code1`, 
+     `T01`.`organization_code1`, 
      `Product`.`Product_line_code`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
@@ -9896,7 +9896,7 @@ SELECT     `T01`.`organization_code1`,
 
 
 -- id: 17364
-SELECT     `T01`.`organization_code1`, 
+     `T01`.`organization_code1`, 
      `Product`.`Product_line_code`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
@@ -9940,7 +9940,7 @@ SELECT     `T01`.`organization_code1`,
 
 
 -- id: 17409
-SELECT     `T3`.`organization_code1`, 
+     `T3`.`organization_code1`, 
      `T21`.`Organization_name__level_1_`
  FROM
      (
@@ -9985,7 +9985,7 @@ SELECT     `T3`.`organization_code1`,
 
 
 -- id: 17433
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T2`.`product_line_en`
  FROM
      `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` JOIN `gosalesdw1021`.`sls_product_line_lookup` `T2` ON `SLS_PRODUCT_DIM`.`product_line_code` = `T2`.`product_line_code` 
@@ -9999,7 +9999,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 17450
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -10021,7 +10021,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 17476
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
      `GO_TIME_DIM0`.`current_year`
@@ -10044,7 +10044,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)),
 
 
 -- id: 17658
-SELECT     `T01`.`organization_code1`, 
+     `T01`.`organization_code1`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `Product`.`Product_line_code`, 
@@ -10088,7 +10088,7 @@ SELECT     `T01`.`organization_code1`,
 
 
 -- id: 17840
-SELECT     `T01`.`organization_code1`, 
+     `T01`.`organization_code1`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `Product`.`Product_line_code`, 
@@ -10132,7 +10132,7 @@ SELECT     `T01`.`organization_code1`,
 
 
 -- id: 17885
-SELECT     `T3`.`organization_code1`, 
+     `T3`.`organization_code1`, 
      `T21`.`Organization_name__level_1_`
  FROM
      (
@@ -10177,7 +10177,7 @@ SELECT     `T3`.`organization_code1`,
 
 
 -- id: 17909
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T2`.`product_line_en`
  FROM
      `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` JOIN `gosalesdw1021`.`sls_product_line_lookup` `T2` ON `SLS_PRODUCT_DIM`.`product_line_code` = `T2`.`product_line_code` 
@@ -10191,7 +10191,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 17926
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -10213,7 +10213,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 17952
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
      `GO_TIME_DIM0`.`current_year`
@@ -10236,7 +10236,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)),
 
 
 -- id: 18134
-SELECT     `T01`.`organization_code1`, 
+     `T01`.`organization_code1`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `Product`.`Product_line_code`, 
@@ -10280,7 +10280,7 @@ SELECT     `T01`.`organization_code1`,
 
 
 -- id: 18316
-SELECT     `T01`.`organization_code1`, 
+     `T01`.`organization_code1`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `Product`.`Product_line_code`, 
@@ -10324,7 +10324,7 @@ SELECT     `T01`.`organization_code1`,
 
 
 -- id: 18361
-SELECT     `T3`.`organization_code1`, 
+     `T3`.`organization_code1`, 
      `T21`.`Organization_name__level_1_`
  FROM
      (
@@ -10369,7 +10369,7 @@ SELECT     `T3`.`organization_code1`,
 
 
 -- id: 18385
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T2`.`product_line_en`
  FROM
      `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` JOIN `gosalesdw1021`.`sls_product_line_lookup` `T2` ON `SLS_PRODUCT_DIM`.`product_line_code` = `T2`.`product_line_code` 
@@ -10383,7 +10383,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 18402
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -10405,7 +10405,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 18428
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
      `GO_TIME_DIM0`.`current_year`
@@ -10428,7 +10428,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)),
 
 
 -- id: 18610
-SELECT     `T01`.`organization_code1`, 
+     `T01`.`organization_code1`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `Product`.`Product_line_code`, 
@@ -10472,7 +10472,7 @@ SELECT     `T01`.`organization_code1`,
 
 
 -- id: 18792
-SELECT     `T01`.`organization_code1`, 
+     `T01`.`organization_code1`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `Product`.`Product_line_code`, 
@@ -10516,7 +10516,7 @@ SELECT     `T01`.`organization_code1`,
 
 
 -- id: 18837
-SELECT     `T3`.`organization_code1`, 
+     `T3`.`organization_code1`, 
      `T21`.`Organization_name__level_1_`
  FROM
      (
@@ -10561,7 +10561,7 @@ SELECT     `T3`.`organization_code1`,
 
 
 -- id: 18861
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T2`.`product_line_en`
  FROM
      `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` JOIN `gosalesdw1021`.`sls_product_line_lookup` `T2` ON `SLS_PRODUCT_DIM`.`product_line_code` = `T2`.`product_line_code` 
@@ -10575,7 +10575,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 18878
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -10597,7 +10597,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 18904
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
      `GO_TIME_DIM0`.`current_year`
@@ -10620,7 +10620,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)),
 
 
 -- id: 19086
-SELECT     `T01`.`organization_code1`, 
+     `T01`.`organization_code1`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `Product`.`Product_line_code`, 
@@ -10664,7 +10664,7 @@ SELECT     `T01`.`organization_code1`,
 
 
 -- id: 19268
-SELECT     `T01`.`organization_code1`, 
+     `T01`.`organization_code1`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `Product`.`Product_line_code`, 
@@ -10708,7 +10708,7 @@ SELECT     `T01`.`organization_code1`,
 
 
 -- id: 19313
-SELECT     `T3`.`organization_code1`, 
+     `T3`.`organization_code1`, 
      `T21`.`Organization_name__level_1_`
  FROM
      (
@@ -10753,7 +10753,7 @@ SELECT     `T3`.`organization_code1`,
 
 
 -- id: 19325
-SELECT     `T0`.`order_method_key` AS `column0`, 
+     `T0`.`order_method_key` AS `column0`, 
      `T0`.`order_method_en` AS `column1`
  FROM
      `gosalesdw1021`.`sls_order_method_dim` `T0` 
@@ -10771,7 +10771,7 @@ SELECT     `T0`.`order_method_key` AS `column0`,
 
 
 -- id: 19367
-SELECT     `T2`.`order_method_key` AS `column0`, 
+     `T2`.`order_method_key` AS `column0`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column1`
  FROM
      `gosalesdw1021`.`sls_sales_fact` `SLS_SALES_FACT` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `SLS_SALES_FACT`.`order_day_key` = `GO_TIME_DIM`.`day_key` JOIN `gosalesdw1021`.`sls_order_method_dim` `T2` ON `SLS_SALES_FACT`.`order_method_key` = `T2`.`order_method_key` 
@@ -10787,7 +10787,7 @@ SELECT     `T2`.`order_method_key` AS `column0`,
 
 
 -- id: 19409
-SELECT     `T2`.`order_method_key` AS `column0`, 
+     `T2`.`order_method_key` AS `column0`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column1`
  FROM
      `gosalesdw1021`.`sls_sales_fact` `SLS_SALES_FACT` JOIN `gosalesdw1021`.`go_time_dim` `GO_TIME_DIM` ON `SLS_SALES_FACT`.`order_day_key` = `GO_TIME_DIM`.`day_key` JOIN `gosalesdw1021`.`sls_order_method_dim` `T2` ON `SLS_SALES_FACT`.`order_method_key` = `T2`.`order_method_key` 
@@ -10803,7 +10803,7 @@ SELECT     `T2`.`order_method_key` AS `column0`,
 
 
 -- id: 19426
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -10825,7 +10825,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 19518
-SELECT     `T31`.`organization_code1` AS `column0`, 
+     `T31`.`organization_code1` AS `column0`, 
      `T21`.`Organization_name__level_1_` AS `column1`, 
      `T31`.`organization_code2` AS `column2`, 
      `T61`.`Organization_name__level_2_` AS `column3`, 
@@ -10945,7 +10945,7 @@ SELECT     `T31`.`organization_code1` AS `column0`,
 
 
 -- id: 19533
-SELECT     `T0`.`expense_group_code` AS `column0`, 
+     `T0`.`expense_group_code` AS `column0`, 
      `T0`.`expense_group_en` AS `column1`, 
      `T0`.`expense_type_code` AS `column2`, 
      `T0`.`expense_type_en` AS `column3`
@@ -10971,7 +10971,7 @@ SELECT     `T0`.`expense_group_code` AS `column0`,
 
 
 -- id: 19665
-SELECT     `T3`.`organization_code1` AS `column0`, 
+     `T3`.`organization_code1` AS `column0`, 
      `T21`.`Organization_name__level_1_` AS `column1`
  FROM
      (
@@ -11020,7 +11020,7 @@ SELECT     `T3`.`organization_code1` AS `column0`,
 
 
 -- id: 19677
-SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
+     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
      `EMP_EMPLOYEE_DIM`.`manager1` AS `column1`, 
      `EMP_EMPLOYEE_DIM`.`manager_mb1` AS `column2`, 
      `EMP_EMPLOYEE_DIM`.`manager_code2` AS `column3`, 
@@ -11099,7 +11099,7 @@ SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`,
 
 
 -- id: 19706
-SELECT     `Successor__model_`.`SUCCESSOR_EMPLOYEE_KEY` AS `column0`, 
+     `Successor__model_`.`SUCCESSOR_EMPLOYEE_KEY` AS `column0`, 
      `Successor__model_`.`SUCCESSOR_EMPLOYEE_NAME` AS `column1`
  FROM
      (
@@ -11123,7 +11123,7 @@ SELECT     `Successor__model_`.`SUCCESSOR_EMPLOYEE_KEY` AS `column0`,
 
 
 -- id: 19718
-SELECT     `T0`.`successor_status_code` AS `column0`, 
+     `T0`.`successor_status_code` AS `column0`, 
      `T0`.`successor_status_en` AS `column1`
  FROM
      `gosalesdw1021`.`emp_succession_status_dim` `T0` 
@@ -11141,7 +11141,7 @@ SELECT     `T0`.`successor_status_code` AS `column0`,
 
 
 -- id: 19830
-SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
+     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`, 
      `EMP_EMPLOYEE_DIM`.`manager_code2` AS `column1`, 
      `EMP_EMPLOYEE_DIM`.`manager_code3` AS `column2`, 
      `EMP_EMPLOYEE_DIM`.`manager_code4` AS `column3`, 
@@ -11190,7 +11190,7 @@ SELECT     `EMP_EMPLOYEE_DIM`.`manager_code1` AS `column0`,
 
 
 -- id: 19941
-SELECT     `GO_REGION_DIM`.`region_en` AS `Branch_region`, 
+     `GO_REGION_DIM`.`region_en` AS `Branch_region`, 
      `GO_TIME_DIM`.`current_year` AS `Year0`, 
      `EMP_EMPLOYEE_DIM`.`employee_key` AS `Employee_key`, 
      `T5`.`position_en` AS `Position_name`, 
@@ -11214,7 +11214,7 @@ SELECT     `GO_REGION_DIM`.`region_en` AS `Branch_region`,
 
 
 -- id: 20092
-SELECT     `Product`.`Product_line` AS `Product_line`, 
+     `Product`.`Product_line` AS `Product_line`, 
      `Product`.`Product_brand` AS `Product_brand`, 
      SUM(`T11`.`return_quantity`) AS `Return_quantity`, 
      `T101`.`reason_description_en` AS `Reason_description`
@@ -11248,7 +11248,7 @@ SELECT     `Product`.`Product_line` AS `Product_line`,
 
 
 -- id: 20249
-SELECT     `Product`.`Product_line` AS `Product_line`, 
+     `Product`.`Product_line` AS `Product_line`, 
      `T11`.`order_method_en` AS `Order_method_type`, 
      SUM(`SLS_SALES_FACT`.`quantity`) AS `Quantity`
  FROM
@@ -11278,7 +11278,7 @@ SELECT     `Product`.`Product_line` AS `Product_line`,
 
 
 -- id: 20381
-SELECT     `Product`.`Product_line` AS `Product_line`, 
+     `Product`.`Product_line` AS `Product_line`, 
      AVG((`SLS_SALES_FACT`.`sale_total` - `SLS_SALES_FACT`.`unit_cost` * `SLS_SALES_FACT`.`quantity`) / CASE WHEN `SLS_SALES_FACT`.`sale_total` = 0 THEN NULL ELSE `SLS_SALES_FACT`.`sale_total` END) AS `Gross_margin`
  FROM
      (
@@ -11306,7 +11306,7 @@ SELECT     `Product`.`Product_line` AS `Product_line`,
 
 
 -- id: 20422
-SELECT     `Retailer_site`.`Region` AS `Region`, 
+     `Retailer_site`.`Region` AS `Region`, 
      AVG((`SLS_SALES_FACT`.`sale_total` - `SLS_SALES_FACT`.`unit_cost` * `SLS_SALES_FACT`.`quantity`) / CASE WHEN `SLS_SALES_FACT`.`sale_total` = 0 THEN NULL ELSE `SLS_SALES_FACT`.`sale_total` END) AS `Gross_margin`
  FROM
      (
@@ -11340,7 +11340,7 @@ SELECT     `Retailer_site`.`Region` AS `Region`,
 
 
 -- id: 20598
-SELECT     `Product`.`Product_line` AS `Product_line`, 
+     `Product`.`Product_line` AS `Product_line`, 
      `Retailer_site`.`Region` AS `Region`, 
      SUM(`SLS_SALES_FACT`.`gross_profit`) AS `Gross_profit`
  FROM
@@ -11391,7 +11391,7 @@ SELECT     `Product`.`Product_line` AS `Product_line`,
 
 
 -- id: 20651
-SELECT     `T4`.`product_line_en`, 
+     `T4`.`product_line_en`, 
      `SLS_PRODUCT_DIM`.`product_line_code`, 
      `SLS_PRODUCT_DIM`.`base_product_key`
  FROM
@@ -11455,7 +11455,7 @@ SELECT     `T4`.`product_line_en`,
 
 
 -- id: 20808
-SELECT     `Product`.`Product_line` AS `Product_line`, 
+     `Product`.`Product_line` AS `Product_line`, 
      MIN(`GO_TIME_DIM0`.`current_year`) AS `Year0`
  FROM
      `gosalesdw1021`.`dist_inventory_fact` `T12` JOIN 
@@ -11494,7 +11494,7 @@ SELECT     `Product`.`Product_line` AS `Product_line`,
 
 
 -- id: 20861
-SELECT     `T41`.`product_line_en`, 
+     `T41`.`product_line_en`, 
      `SLS_PRODUCT_DIM`.`product_line_code`, 
      `SLS_PRODUCT_DIM`.`base_product_key`
  FROM
@@ -11556,7 +11556,7 @@ SELECT     `T41`.`product_line_en`,
 
 
 -- id: 20997
-SELECT     `Product`.`Product_line` AS `Product_line`, 
+     `Product`.`Product_line` AS `Product_line`, 
      SUM(`SLS_SALES_FACT`.`unit_cost` * `SLS_SALES_FACT`.`quantity`) AS `Product_cost`
  FROM
      (
@@ -11584,7 +11584,7 @@ SELECT     `Product`.`Product_line` AS `Product_line`,
 
 
 -- id: 21148
-SELECT     `Product`.`Product_line` AS `Product_line`, 
+     `Product`.`Product_line` AS `Product_line`, 
      `GO_TIME_DIM`.`month_en` AS `Month0`, 
      SUM(`SLS_SALES_FACT`.`unit_cost` * `SLS_SALES_FACT`.`quantity`) AS `Product_cost`
  FROM
@@ -11615,7 +11615,7 @@ SELECT     `Product`.`Product_line` AS `Product_line`,
 
 
 -- id: 21184
-SELECT     `GO_TIME_DIM`.`month_key` AS `Month_key`, 
+     `GO_TIME_DIM`.`month_key` AS `Month_key`, 
      `T3`.`order_method_en` AS `Order_method_type`, 
      AVG((`SLS_SALES_FACT`.`sale_total` - `SLS_SALES_FACT`.`unit_cost` * `SLS_SALES_FACT`.`quantity`) / CASE WHEN `SLS_SALES_FACT`.`sale_total` = 0 THEN NULL ELSE `SLS_SALES_FACT`.`sale_total` END) AS `Gross_margin____`
  FROM
@@ -11631,7 +11631,7 @@ SELECT     `GO_TIME_DIM`.`month_key` AS `Month_key`,
 
 
 -- id: 21225
-SELECT     `T21`.`campaign_name_en` AS `Campaign_name`, 
+     `T21`.`campaign_name_en` AS `Campaign_name`, 
      SUM(`T3`.`sale_total`) AS `Revenue`, 
      SUM(`T3`.`gross_profit`) AS `Gross_profit`
  FROM
@@ -11646,7 +11646,7 @@ SELECT     `T21`.`campaign_name_en` AS `Campaign_name`,
 
 
 -- id: 21307
-SELECT     `T21`.`campaign_name_en` AS `Campaign_name`, 
+     `T21`.`campaign_name_en` AS `Campaign_name`, 
      SUM(`T31`.`sale_total`) AS `Promotion_revenue`
  FROM
      `gosalesdw1021`.`mrk_promotion_dim` `MRK_PROMOTION_DIM` JOIN `gosalesdw1021`.`mrk_campaign_lookup` `T21` ON `MRK_PROMOTION_DIM`.`campaign_code` = `T21`.`campaign_code` JOIN `gosalesdw1021`.`mrk_promotion_fact` `T31` ON `MRK_PROMOTION_DIM`.`promotion_key` = `T31`.`promotion_key` 
@@ -11674,7 +11674,7 @@ SELECT     `T21`.`campaign_name_en` AS `Campaign_name`,
 
 
 -- id: 21317
-SELECT     `T1`.`campaign_name_en` AS `Campaign_name`
+     `T1`.`campaign_name_en` AS `Campaign_name`
  FROM
      `gosalesdw1021`.`mrk_campaign_lookup` `T1` 
  GROUP BY 
@@ -11687,7 +11687,7 @@ SELECT     `T1`.`campaign_name_en` AS `Campaign_name`
 
 
 -- id: 21343
-SELECT     `GO_BRANCH_DIM`.`city` AS `City`, 
+     `GO_BRANCH_DIM`.`city` AS `City`, 
      AVG(`T1`.`days_to_fill`) AS `Days_to_fill`
  FROM
      `gosalesdw1021`.`emp_recruitment_fact` `T1` JOIN `gosalesdw1021`.`go_branch_dim` `GO_BRANCH_DIM` ON `T1`.`branch_key` = `GO_BRANCH_DIM`.`branch_key` 
@@ -11701,7 +11701,7 @@ SELECT     `GO_BRANCH_DIM`.`city` AS `City`,
 
 
 -- id: 21384
-SELECT     `GO_TIME_DIM`.`current_year` AS `Year0`, 
+     `GO_TIME_DIM`.`current_year` AS `Year0`, 
      `T3`.`recruitment_type_en` AS `Recruitment_type`, 
      AVG(`T11`.`days_to_fill`) AS `Days_to_fill`
  FROM
@@ -11717,7 +11717,7 @@ SELECT     `GO_TIME_DIM`.`current_year` AS `Year0`,
 
 
 -- id: 21593
-SELECT     `T51`.`Organization_name__level_1_` AS `Organization_name__level_1_`, 
+     `T51`.`Organization_name__level_1_` AS `Organization_name__level_1_`, 
      `T81`.`Position_name__level_3_` AS `Position_department__level_3_`, 
      SUM(`T101`.`position_count`) AS `Position_count`, 
      SUM(`T101`.`planned_position_count`) AS `Planned_position_count`
@@ -11879,7 +11879,7 @@ SELECT     `T51`.`Organization_name__level_1_` AS `Organization_name__level_1_`
 
 
 -- id: 21653
-SELECT     `T21`.`Position_name__level_3_` AS `Position_department__level_3_`, 
+     `T21`.`Position_name__level_3_` AS `Position_department__level_3_`, 
      `T6`.`recruitment_type_en` AS `Recruitment_type`, 
      AVG(`T51`.`days_to_fill`) AS `Days_to_fill`
  FROM
@@ -11904,7 +11904,7 @@ SELECT     `T21`.`Position_name__level_3_` AS `Position_department__level_3_`,
 
 
 -- id: 21710
-SELECT     `GO_REGION_DIM`.`region_en` AS `Region`, 
+     `GO_REGION_DIM`.`region_en` AS `Region`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`, 
      SUM(`SLS_SALES_FACT`.`unit_price` * `SLS_SALES_FACT`.`quantity`) AS `Planned_revenue`
  FROM
@@ -11919,7 +11919,7 @@ SELECT     `GO_REGION_DIM`.`region_en` AS `Region`,
 
 
 -- id: 21720
-SELECT     `GO_REGION_DIM`.`region_en` AS `Region`
+     `GO_REGION_DIM`.`region_en` AS `Region`
  FROM
      `gosalesdw1021`.`go_region_dim` `GO_REGION_DIM` 
  GROUP BY 
@@ -11932,7 +11932,7 @@ SELECT     `GO_REGION_DIM`.`region_en` AS `Region`
 
 
 -- id: 21777
-SELECT     `GO_REGION_DIM`.`region_en` AS `Branch_region`, 
+     `GO_REGION_DIM`.`region_en` AS `Branch_region`, 
      SUM(`T5`.`sales_target`) AS `Sales_target`
  FROM
      `gosalesdw1021`.`emp_employee_dim` `EMP_EMPLOYEE_DIM` JOIN `gosalesdw1021`.`go_branch_dim` `GO_BRANCH_DIM` ON `EMP_EMPLOYEE_DIM`.`branch_code` = `GO_BRANCH_DIM`.`branch_code` JOIN `gosalesdw1021`.`sls_sales_targ_fact` `T5` ON `T5`.`employee_key` = `EMP_EMPLOYEE_DIM`.`employee_key` JOIN `gosalesdw1021`.`go_region_dim` `GO_REGION_DIM` ON `GO_REGION_DIM`.`country_code` = `GO_BRANCH_DIM`.`country_code` 
@@ -11946,7 +11946,7 @@ SELECT     `GO_REGION_DIM`.`region_en` AS `Branch_region`,
 
 
 -- id: 21891
-SELECT     `GO_REGION_DIM`.`region_en` AS `Branch_region`, 
+     `GO_REGION_DIM`.`region_en` AS `Branch_region`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`
  FROM
      `gosalesdw1021`.`emp_employee_dim` `EMP_EMPLOYEE_DIM` JOIN `gosalesdw1021`.`go_branch_dim` `GO_BRANCH_DIM` ON `EMP_EMPLOYEE_DIM`.`branch_code` = `GO_BRANCH_DIM`.`branch_code` JOIN `gosalesdw1021`.`sls_sales_fact` `SLS_SALES_FACT` ON `SLS_SALES_FACT`.`employee_key` = `EMP_EMPLOYEE_DIM`.`employee_key` JOIN `gosalesdw1021`.`go_region_dim` `GO_REGION_DIM` ON `GO_REGION_DIM`.`country_code` = `GO_BRANCH_DIM`.`country_code` 
@@ -11974,7 +11974,7 @@ SELECT     `GO_REGION_DIM`.`region_en` AS `Branch_region`,
 
 
 -- id: 21948
-SELECT     `GO_REGION_DIM`.`country_en` AS `Country`, 
+     `GO_REGION_DIM`.`country_en` AS `Country`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`
  FROM
      `gosalesdw1021`.`emp_employee_dim` `EMP_EMPLOYEE_DIM` JOIN `gosalesdw1021`.`go_branch_dim` `GO_BRANCH_DIM` ON `EMP_EMPLOYEE_DIM`.`branch_code` = `GO_BRANCH_DIM`.`branch_code` JOIN `gosalesdw1021`.`sls_sales_fact` `SLS_SALES_FACT` ON `SLS_SALES_FACT`.`employee_key` = `EMP_EMPLOYEE_DIM`.`employee_key` JOIN `gosalesdw1021`.`go_region_dim` `GO_REGION_DIM` ON `GO_REGION_DIM`.`country_code` = `GO_BRANCH_DIM`.`country_code` 
@@ -11988,7 +11988,7 @@ SELECT     `GO_REGION_DIM`.`country_en` AS `Country`,
 
 
 -- id: 22084
-SELECT     `Product`.`Product_type` AS `Product_type`, 
+     `Product`.`Product_type` AS `Product_type`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`
  FROM
      (
@@ -12016,7 +12016,7 @@ SELECT     `Product`.`Product_type` AS `Product_type`,
 
 
 -- id: 22110
-SELECT     `T2`.`order_method_en` AS `Order_method_type`, 
+     `T2`.`order_method_en` AS `Order_method_type`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`
  FROM
      `gosalesdw1021`.`sls_sales_fact` `SLS_SALES_FACT` JOIN `gosalesdw1021`.`sls_order_method_dim` `T2` ON `SLS_SALES_FACT`.`order_method_key` = `T2`.`order_method_key` 
@@ -12030,7 +12030,7 @@ SELECT     `T2`.`order_method_en` AS `Order_method_type`,
 
 
 -- id: 22246
-SELECT     `Product`.`Product_line` AS `Product_line`, 
+     `Product`.`Product_line` AS `Product_line`, 
      SUM(`SLS_SALES_FACT`.`unit_price` * `SLS_SALES_FACT`.`quantity`) AS `Planned_revenue`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`
  FROM
@@ -12059,7 +12059,7 @@ SELECT     `Product`.`Product_line` AS `Product_line`,
 
 
 -- id: 22543
-SELECT     `T41`.`product_line_en`, 
+     `T41`.`product_line_en`, 
      `T51`.`product_type_en`, 
      `SLS_PRODUCT_DIM`.`product_line_code`, 
      `SLS_PRODUCT_DIM`.`product_type_key`
@@ -12208,7 +12208,7 @@ SELECT     `T41`.`product_line_en`,
 
 
 -- id: 22680
-SELECT     `GO_TIME_DIM`.`day_key` AS `Day_key`, 
+     `GO_TIME_DIM`.`day_key` AS `Day_key`, 
      `T61`.`organization_code1` AS `Organization_code__level_1_`, 
      `T61`.`organization_code2` AS `Organization_code__level_2_`, 
      `T61`.`organization_code3` AS `Organization_code__level_3_`, 
@@ -12278,7 +12278,7 @@ SELECT     `GO_TIME_DIM`.`day_key` AS `Day_key`,
 
 
 -- id: 22797
-SELECT     `GO_TIME_DIM`.`day_key` AS `Day_key`, 
+     `GO_TIME_DIM`.`day_key` AS `Day_key`, 
      `T6`.`organization_code1` AS `Organization_code__level_1_`, 
      `T6`.`organization_code2` AS `Organization_code__level_2_`, 
      `T6`.`organization_code3` AS `Organization_code__level_3_`, 
@@ -12314,7 +12314,7 @@ SELECT     `GO_TIME_DIM`.`day_key` AS `Day_key`,
 
 
 -- id: 22914
-SELECT     `GO_TIME_DIM`.`day_key` AS `Day_key`, 
+     `GO_TIME_DIM`.`day_key` AS `Day_key`, 
      `T6`.`organization_code1` AS `Organization_code__level_1_`, 
      `T6`.`organization_code2` AS `Organization_code__level_2_`, 
      `T6`.`organization_code3` AS `Organization_code__level_3_`, 
@@ -12352,7 +12352,7 @@ SELECT     `GO_TIME_DIM`.`day_key` AS `Day_key`,
 
 
 -- id: 22938
-SELECT     `T2`.`product_line_en`, 
+     `T2`.`product_line_en`, 
      `SLS_PRODUCT_DIM`.`product_line_code`
  FROM
      `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` JOIN `gosalesdw1021`.`sls_product_line_lookup` `T2` ON `SLS_PRODUCT_DIM`.`product_line_code` = `T2`.`product_line_code` 
@@ -12366,7 +12366,7 @@ SELECT     `T2`.`product_line_en`,
 
 
 -- id: 23141
-SELECT     `T71`.`base_product_key`, 
+     `T71`.`base_product_key`, 
      `T71`.`expected_volume`
  FROM
      `gosalesdw1021`.`dist_product_forecast_fact` `T71` 
@@ -12526,7 +12526,7 @@ SELECT     `T71`.`base_product_key`,
 
 
 -- id: 23286
-SELECT     `T71`.`base_product_key`, 
+     `T71`.`base_product_key`, 
      `T71`.`expected_volume`
  FROM
      `gosalesdw1021`.`dist_product_forecast_fact` `T71` 
@@ -12674,7 +12674,7 @@ SELECT     `T71`.`base_product_key`,
 
 
 -- id: 23431
-SELECT     `T71`.`base_product_key`, 
+     `T71`.`base_product_key`, 
      `T71`.`expected_volume`
  FROM
      `gosalesdw1021`.`dist_product_forecast_fact` `T71` 
@@ -12758,7 +12758,7 @@ SELECT     `T71`.`base_product_key`,
 
 
 -- id: 23576
-SELECT     `T71`.`base_product_key`, 
+     `T71`.`base_product_key`, 
      `T71`.`expected_volume`
  FROM
      `gosalesdw1021`.`dist_product_forecast_fact` `T71` 
@@ -12842,7 +12842,7 @@ SELECT     `T71`.`base_product_key`,
 
 
 -- id: 23721
-SELECT     `T71`.`base_product_key`, 
+     `T71`.`base_product_key`, 
      `T71`.`expected_volume`
  FROM
      `gosalesdw1021`.`dist_product_forecast_fact` `T71` 
@@ -12926,7 +12926,7 @@ SELECT     `T71`.`base_product_key`,
 
 
 -- id: 23897
-SELECT     `Product`.`Product_line` AS `Product_line`, 
+     `Product`.`Product_line` AS `Product_line`, 
      `Retailer_site`.`Region` AS `Region`, 
      `Retailer_site`.`Retailer_country` AS `Retailer_country`, 
      `Retailer_site`.`Retailer_name__multiscript_` AS `Retailer_name__multiscript_`, 
@@ -12983,7 +12983,7 @@ SELECT     `Product`.`Product_line` AS `Product_line`,
 
 
 -- id: 24073
-SELECT     `Product`.`Product_line` AS `Product_line`, 
+     `Product`.`Product_line` AS `Product_line`, 
      `Retailer_site`.`Region` AS `Region`, 
      `Retailer_site`.`Retailer_country` AS `Retailer_country`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `Sum1`
@@ -13037,7 +13037,7 @@ SELECT     `Product`.`Product_line` AS `Product_line`,
 
 
 -- id: 24256
-SELECT     `T12`.`order_number` AS `Order_number`, 
+     `T12`.`order_number` AS `Order_number`, 
      `GO_TIME_DIM`.`day_date` AS `Date0`, 
      `T111`.`order_method_en` AS `Order_method`, 
      `Product`.`Product_name` AS `Product_name`, 
@@ -13080,7 +13080,7 @@ SELECT     `T12`.`order_number` AS `Order_number`,
 
 
 -- id: 24443
-SELECT     `T12`.`order_number` AS `Order_number`, 
+     `T12`.`order_number` AS `Order_number`, 
      `GO_TIME_DIM`.`day_date` AS `Date0`, 
      `T111`.`order_method_en` AS `Order_method`, 
      `Product`.`Product_name` AS `Product_name`, 
@@ -13124,7 +13124,7 @@ SELECT     `T12`.`order_number` AS `Order_number`,
 
 
 -- id: 24484
-SELECT     `T3`.`order_number` AS `Order_number`, 
+     `T3`.`order_number` AS `Order_number`, 
      `GO_TIME_DIM`.`day_date` AS `Date0`, 
      SUM(`SLS_SALES_FACT`.`quantity`) AS `Quantity1`
  FROM
@@ -13140,7 +13140,7 @@ SELECT     `T3`.`order_number` AS `Order_number`,
 
 
 -- id: 24510
-SELECT     SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`, 
+     SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`, 
      `T2`.`order_number` AS `Order_number`, 
      `T2`.`order_number` AS `Order_number1`
  FROM
@@ -13155,7 +13155,7 @@ SELECT     SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`,
 
 
 -- id: 24554
-SELECT     `T2`.`order_number` AS `Order_number`, 
+     `T2`.`order_number` AS `Order_number`, 
      `T11`.`order_method_en` AS `Order_method`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`
  FROM
@@ -13175,7 +13175,7 @@ SELECT     `T2`.`order_number` AS `Order_number`,
 
 
 -- id: 24598
-SELECT     `T2`.`order_number` AS `Order_number`, 
+     `T2`.`order_number` AS `Order_number`, 
      `T11`.`order_method_en` AS `Order_method`, 
      `T11`.`order_method_code` AS `Order_method_code`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`
@@ -13198,7 +13198,7 @@ SELECT     `T2`.`order_number` AS `Order_number`,
 
 
 -- id: 24642
-SELECT     `T2`.`order_number` AS `Order_number`, 
+     `T2`.`order_number` AS `Order_number`, 
      `T11`.`order_method_en` AS `Order_method`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`
  FROM
@@ -13219,7 +13219,7 @@ SELECT     `T2`.`order_number` AS `Order_number`,
 
 
 -- id: 24668
-SELECT     `T2`.`order_method_en` AS `Order_method_type`, 
+     `T2`.`order_method_en` AS `Order_method_type`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue1`
  FROM
      `gosalesdw1021`.`sls_sales_fact` `SLS_SALES_FACT` JOIN `gosalesdw1021`.`sls_order_method_dim` `T2` ON `SLS_SALES_FACT`.`order_method_key` = `T2`.`order_method_key` 
@@ -13233,7 +13233,7 @@ SELECT     `T2`.`order_method_en` AS `Order_method_type`,
 
 
 -- id: 24825
-SELECT     `T11`.`order_number` AS `Order_number`, 
+     `T11`.`order_number` AS `Order_number`, 
      `Product`.`Product_name` AS `Product_name`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`
  FROM
@@ -13264,7 +13264,7 @@ SELECT     `T11`.`order_number` AS `Order_number`,
 
 
 -- id: 24995
-SELECT     `T11`.`order_number` AS `Order_number`, 
+     `T11`.`order_number` AS `Order_number`, 
      `Product`.`Product_name` AS `Product_name`, 
      `GO_TIME_DIM`.`day_date` AS `Date0`
  FROM
@@ -13303,7 +13303,7 @@ SELECT     `T11`.`order_number` AS `Order_number`,
 
 
 -- id: 25036
-SELECT     `T3`.`order_number` AS `Order_number`, 
+     `T3`.`order_number` AS `Order_number`, 
      `GO_TIME_DIM`.`day_date` AS `Date0`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`
  FROM
@@ -13319,7 +13319,7 @@ SELECT     `T3`.`order_number` AS `Order_number`,
 
 
 -- id: 25172
-SELECT     `Product`.`Product_name` AS `Product`, 
+     `Product`.`Product_name` AS `Product`, 
      SUM(`SLS_SALES_FACT`.`unit_cost` * `SLS_SALES_FACT`.`quantity`) AS `Product_cost1`
  FROM
      (
@@ -13348,7 +13348,7 @@ SELECT     `Product`.`Product_name` AS `Product`,
 
 
 -- id: 25287
-SELECT     `Product`.`Product_name` AS `Product_name`, 
+     `Product`.`Product_name` AS `Product_name`, 
      `Product`.`Product_description` AS `Product_description`
  FROM
      (
@@ -13379,7 +13379,7 @@ SELECT     `Product`.`Product_name` AS `Product_name`,
 
 
 -- id: 25402
-SELECT     `Product`.`Product_name` AS `Product_name`, 
+     `Product`.`Product_name` AS `Product_name`, 
      `Product`.`Introduction_date` AS `Introduction_date`
  FROM
      (
@@ -13409,7 +13409,7 @@ SELECT     `Product`.`Product_name` AS `Product_name`,
 
 
 -- id: 25538
-SELECT     `Product`.`Product_name` AS `Product`, 
+     `Product`.`Product_name` AS `Product`, 
      `Product`.`Product_line` AS `Product_line`, 
      SUM(`SLS_SALES_FACT`.`quantity`) AS `Quantity1`
  FROM
@@ -13441,7 +13441,7 @@ SELECT     `Product`.`Product_name` AS `Product`,
 
 
 -- id: 25548
-SELECT     `T1`.`order_method_en` AS `useValue`, 
+     `T1`.`order_method_en` AS `useValue`, 
      `T1`.`order_method_en` AS `displayValue`
  FROM
      `gosalesdw1021`.`sls_order_method_dim` `T1` 
@@ -13455,7 +13455,7 @@ SELECT     `T1`.`order_method_en` AS `useValue`,
 
 
 -- id: 25724
-SELECT     `Product`.`Product_name` AS `Product_name`, 
+     `Product`.`Product_name` AS `Product_name`, 
      `T11`.`order_method_en` AS `Order_method`, 
      `GO_TIME_DIM`.`day_date` AS `Date0`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`
@@ -13495,7 +13495,7 @@ SELECT     `Product`.`Product_name` AS `Product_name`,
 
 
 -- id: 25884
-SELECT     `Product`.`Product_name` AS `Product_name`, 
+     `Product`.`Product_name` AS `Product_name`, 
      `T10`.`order_method_en` AS `Order_method`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`
  FROM
@@ -13532,7 +13532,7 @@ SELECT     `Product`.`Product_name` AS `Product_name`,
 
 
 -- id: 26020
-SELECT     `Product`.`Product_type` AS `Product_type`, 
+     `Product`.`Product_type` AS `Product_type`, 
      `Product`.`Product_name` AS `Product_name`, 
      SUM(`SLS_SALES_FACT`.`quantity`) AS `Quantity`, 
      AVG(`SLS_SALES_FACT`.`unit_sale_price`) AS `Unit_sale_price`
@@ -13565,7 +13565,7 @@ SELECT     `Product`.`Product_type` AS `Product_type`,
 
 
 -- id: 26156
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      `Product`.`Product_type_key` AS `column1`, 
      `Product`.`Base_product_key` AS `column2`, 
      SUM(`T10`.`return_quantity`) AS `column3`
@@ -13599,7 +13599,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 26292
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      `Product`.`Product_type_key` AS `column1`, 
      `Product`.`Base_product_key` AS `column2`, 
      SUM(`SLS_SALES_FACT`.`quantity`) AS `column3`
@@ -13633,7 +13633,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 26428
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      `Product`.`Product_type_key` AS `column1`, 
      `Product`.`Base_product_key` AS `column2`, 
      AVG(`SLS_SALES_FACT`.`unit_cost`) AS `column3`, 
@@ -13669,7 +13669,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 26579
-SELECT     `Product`.`Product_name` AS `Product_name`, 
+     `Product`.`Product_name` AS `Product_name`, 
      `GO_TIME_DIM`.`day_date` AS `Date0`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`
  FROM
@@ -13701,7 +13701,7 @@ SELECT     `Product`.`Product_name` AS `Product_name`,
 
 
 -- id: 26605
-SELECT     `SLS_RETAILER_DIM`.`retailer_name`, 
+     `SLS_RETAILER_DIM`.`retailer_name`, 
      `T0`.`COUNTRY_KEY`, 
      `SLS_RETAILER_DIM`.`retailer_key`
  FROM
@@ -13731,7 +13731,7 @@ SELECT     `SLS_RETAILER_DIM`.`retailer_name`,
 
 
 -- id: 26637
-SELECT     `Retailer_site`.`Retailer_name` AS `Retailer_name`, 
+     `Retailer_site`.`Retailer_name` AS `Retailer_name`, 
      `Retailer_site`.`Contact_last_name` AS `Contact_last_name`, 
      `Retailer_site`.`Contact_first_name` AS `Contact_first_name`, 
      `Retailer_site`.`Contact_phone_number` AS `Contact_phone_number`, 
@@ -13781,7 +13781,7 @@ SELECT     `Retailer_site`.`Retailer_name` AS `Retailer_name`,
 
 
 -- id: 26755
-SELECT     `Product`.`Product_line` AS `Product_line`, 
+     `Product`.`Product_line` AS `Product_line`, 
      `Product`.`Product_name` AS `Product_name`, 
      `Product`.`Product_color` AS `Product_color`, 
      `Product`.`Product_size` AS `Product_size`, 
@@ -13831,7 +13831,7 @@ SELECT     `Product`.`Product_line` AS `Product_line`,
 
 
 -- id: 26796
-SELECT     `T3`.`order_number` AS `Order_number`, 
+     `T3`.`order_number` AS `Order_number`, 
      `T21`.`order_method_en` AS `Order_method`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `Revenue`
  FROM
@@ -13847,7 +13847,7 @@ SELECT     `T3`.`order_number` AS `Order_number`,
 
 
 -- id: 26838
-SELECT     `T01`.`product_name`, 
+     `T01`.`product_name`, 
      `T4`.`product_type_en`, 
      `SLS_PRODUCT_DIM`.`product_type_key`, 
      `SLS_PRODUCT_DIM`.`base_product_key`
@@ -13873,7 +13873,7 @@ SELECT     `T01`.`product_name`,
 
 
 -- id: 28145
-SELECT     `T41`.`product_line_en`, 
+     `T41`.`product_line_en`, 
      `T51`.`product_type_en`, 
      `SLS_PRODUCT_DIM`.`product_line_code`, 
      `SLS_PRODUCT_DIM`.`product_type_key`
@@ -14022,7 +14022,7 @@ SELECT     `T41`.`product_line_en`,
 
 
 -- id: 28297
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      `Product`.`Product_type_key` AS `column1`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column2`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column3`
@@ -14090,7 +14090,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 28433
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      `Product`.`Product_type_key` AS `column1`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column2`
  FROM
@@ -14121,7 +14121,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 28585
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)) AS `column1`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column2`
  FROM
@@ -14154,7 +14154,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 28721
-SELECT     `Product`.`Product_line_code` AS `column0`, 
+     `Product`.`Product_line_code` AS `column0`, 
      SUM(`SLS_SALES_FACT`.`sale_total`) AS `column1`
  FROM
      (
@@ -14182,7 +14182,7 @@ SELECT     `Product`.`Product_line_code` AS `column0`,
 
 
 -- id: 28738
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -14204,7 +14204,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 28764
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
      `GO_TIME_DIM0`.`current_year`
@@ -14227,7 +14227,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)),
 
 
 -- id: 28802
-SELECT     `T1`.`organization_code3`, 
+     `T1`.`organization_code3`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `SLS_SALES_FACT`.`sale_total`
@@ -14244,7 +14244,7 @@ SELECT     `T1`.`organization_code3`,
 
 
 -- id: 28840
-SELECT     `T1`.`organization_code3`, 
+     `T1`.`organization_code3`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `SLS_SALES_FACT`.`sale_total`
@@ -14261,7 +14261,7 @@ SELECT     `T1`.`organization_code3`,
 
 
 -- id: 28864
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T2`.`product_line_en`
  FROM
      `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` JOIN `gosalesdw1021`.`sls_product_line_lookup` `T2` ON `SLS_PRODUCT_DIM`.`product_line_code` = `T2`.`product_line_code` 
@@ -14275,7 +14275,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 28881
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -14297,7 +14297,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 28907
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
      `GO_TIME_DIM0`.`current_year`
@@ -14320,7 +14320,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)),
 
 
 -- id: 29070
-SELECT     `T10`.`organization_code3`, 
+     `T10`.`organization_code3`, 
      `Product`.`Product_line_code`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
@@ -14353,7 +14353,7 @@ SELECT     `T10`.`organization_code3`,
 
 
 -- id: 29233
-SELECT     `T10`.`organization_code3`, 
+     `T10`.`organization_code3`, 
      `Product`.`Product_line_code`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
@@ -14386,7 +14386,7 @@ SELECT     `T10`.`organization_code3`,
 
 
 -- id: 29257
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T2`.`product_line_en`
  FROM
      `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` JOIN `gosalesdw1021`.`sls_product_line_lookup` `T2` ON `SLS_PRODUCT_DIM`.`product_line_code` = `T2`.`product_line_code` 
@@ -14400,7 +14400,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 29274
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -14422,7 +14422,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 29300
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
      `GO_TIME_DIM0`.`current_year`
@@ -14445,7 +14445,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)),
 
 
 -- id: 29463
-SELECT     `T10`.`organization_code3`, 
+     `T10`.`organization_code3`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `Product`.`Product_line_code`, 
@@ -14478,7 +14478,7 @@ SELECT     `T10`.`organization_code3`,
 
 
 -- id: 29626
-SELECT     `T10`.`organization_code3`, 
+     `T10`.`organization_code3`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `Product`.`Product_line_code`, 
@@ -14511,7 +14511,7 @@ SELECT     `T10`.`organization_code3`,
 
 
 -- id: 29650
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T2`.`product_line_en`
  FROM
      `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` JOIN `gosalesdw1021`.`sls_product_line_lookup` `T2` ON `SLS_PRODUCT_DIM`.`product_line_code` = `T2`.`product_line_code` 
@@ -14525,7 +14525,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 29667
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -14547,7 +14547,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 29693
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
      `GO_TIME_DIM0`.`current_year`
@@ -14570,7 +14570,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)),
 
 
 -- id: 29856
-SELECT     `T10`.`organization_code3`, 
+     `T10`.`organization_code3`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `Product`.`Product_line_code`, 
@@ -14603,7 +14603,7 @@ SELECT     `T10`.`organization_code3`,
 
 
 -- id: 30019
-SELECT     `T10`.`organization_code3`, 
+     `T10`.`organization_code3`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `Product`.`Product_line_code`, 
@@ -14636,7 +14636,7 @@ SELECT     `T10`.`organization_code3`,
 
 
 -- id: 30043
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T2`.`product_line_en`
  FROM
      `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` JOIN `gosalesdw1021`.`sls_product_line_lookup` `T2` ON `SLS_PRODUCT_DIM`.`product_line_code` = `T2`.`product_line_code` 
@@ -14650,7 +14650,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 30060
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -14672,7 +14672,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 30086
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
      `GO_TIME_DIM0`.`current_year`
@@ -14695,7 +14695,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)),
 
 
 -- id: 30249
-SELECT     `T10`.`organization_code3`, 
+     `T10`.`organization_code3`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `Product`.`Product_line_code`, 
@@ -14728,7 +14728,7 @@ SELECT     `T10`.`organization_code3`,
 
 
 -- id: 30412
-SELECT     `T10`.`organization_code3`, 
+     `T10`.`organization_code3`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `Product`.`Product_line_code`, 
@@ -14761,7 +14761,7 @@ SELECT     `T10`.`organization_code3`,
 
 
 -- id: 30436
-SELECT     `SLS_PRODUCT_DIM`.`product_line_code`, 
+     `SLS_PRODUCT_DIM`.`product_line_code`, 
      `T2`.`product_line_en`
  FROM
      `gosalesdw1021`.`sls_product_dim` `SLS_PRODUCT_DIM` JOIN `gosalesdw1021`.`sls_product_line_lookup` `T2` ON `SLS_PRODUCT_DIM`.`product_line_code` = `T2`.`product_line_code` 
@@ -14775,7 +14775,7 @@ SELECT     `SLS_PRODUCT_DIM`.`product_line_code`,
 
 
 -- id: 30453
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
  FROM
      (
      SELECT
@@ -14797,7 +14797,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)) AS `column0`
 
 
 -- id: 30479
-SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
+     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
      `GO_TIME_DIM0`.`current_year`
@@ -14820,7 +14820,7 @@ SELECT     CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)),
 
 
 -- id: 30642
-SELECT     `T10`.`organization_code3`, 
+     `T10`.`organization_code3`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `Product`.`Product_line_code`, 
@@ -14853,7 +14853,7 @@ SELECT     `T10`.`organization_code3`,
 
 
 -- id: 30805
-SELECT     `T10`.`organization_code3`, 
+     `T10`.`organization_code3`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `Product`.`Product_line_code`, 
@@ -14886,7 +14886,7 @@ SELECT     `T10`.`organization_code3`,
 
 
 -- id: 30817
-SELECT     `T0`.`order_method_key` AS `column0`, 
+     `T0`.`order_method_key` AS `column0`, 
      `T0`.`order_method_en` AS `column1`
  FROM
      `gosalesdw1021`.`sls_order_method_dim` `T0` 
@@ -14904,7 +14904,7 @@ SELECT     `T0`.`order_method_key` AS `column0`,
 
 
 -- id: 30876
-SELECT     `T11`.`organization_code3`, 
+     `T11`.`organization_code3`, 
      `T3`.`order_method_key`, 
      `SLS_SALES_FACT`.`sale_total`
  FROM
@@ -14919,7 +14919,7 @@ SELECT     `T11`.`organization_code3`,
 
 
 -- id: 30935
-SELECT     `T11`.`organization_code3`, 
+     `T11`.`organization_code3`, 
      `T3`.`order_method_key`, 
      `SLS_SALES_FACT`.`sale_total`
  FROM
@@ -14934,7 +14934,7 @@ SELECT     `T11`.`organization_code3`,
 
 
 -- id: 30946
-SELECT     `GO_TIME_DIM0`.`month_key`, 
+     `GO_TIME_DIM0`.`month_key`, 
      CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4))
  FROM
      (
@@ -14955,7 +14955,7 @@ SELECT     `GO_TIME_DIM0`.`month_key`,
 
 
 -- id: 30972
-SELECT     `GO_TIME_DIM0`.`month_key`, 
+     `GO_TIME_DIM0`.`month_key`, 
      CAST(`GO_TIME_DIM0`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM0`.`quarter_key`, 
      concat(`T2`.`quarter_en`, ' '), 
@@ -14981,7 +14981,7 @@ SELECT     `GO_TIME_DIM0`.`month_key`,
 
 
 -- id: 30980
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      `GO_TIME_DIM`.`quarter_key`, 
      `GO_TIME_DIM`.`current_year`, 
      `GO_TIME_DIM`.`month_en`
@@ -14999,7 +14999,7 @@ SELECT     `GO_TIME_DIM`.`month_key`,
 
 
 -- id: 31002
-SELECT     `GO_TIME_DIM`.`month_key`, 
+     `GO_TIME_DIM`.`month_key`, 
      CAST(`GO_TIME_DIM`.`current_year` AS CHAR(4)), 
      `GO_TIME_DIM`.`quarter_key`, 
      `T0`.`return_quantity`
