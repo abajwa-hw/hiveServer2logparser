@@ -72,9 +72,9 @@ $count=0;
         		$trimmed_sql = trim($sql);
         		$trimmed_error = trim($error);
 		
-        		print "Found sql $opid: took $duration seconds and status was: $status\n";    
+        		print "\tFound sql $opid: took $duration seconds and status was: $status\n";    
 
-        		print $out "$opid\t$start_time\t$end_time\t$duration\t$status\t$trimmed_error\t$trimmed_sql\n";
+        		print $out "$opid\t$start_time\t$end_time\t$duration\t$status\t$trimmed_error\t$trimmed_sql\t\n";
 		
         		#write out sql to appropriate file
         		if ($status eq $SUCCESS){
