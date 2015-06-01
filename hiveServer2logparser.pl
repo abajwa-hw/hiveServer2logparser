@@ -1,7 +1,7 @@
 #use warnings;
 $SUCCESS = "Success";
 $ERROR = "Error";
-$timestamp = "\\d\\d\\d\\d-\\d\\d-\\d\\d \\d\\d:\\d\\d:\\d\\d,\\d\\d\\d";
+$timestamp = "(\\d\\d\\d\\d-\\d\\d-\\d\\d \\d\\d:\\d\\d:\\d\\d,\\d\\d\\d)";
 
 $num_args = $#ARGV + 1;
 if ($num_args != 1) {
