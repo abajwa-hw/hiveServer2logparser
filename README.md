@@ -3,7 +3,7 @@
 ##### Usage
 
 ```
-perl hiveServer2logparser.pl <path to hiveserver2.log>
+perl hiveServer2logparser.pl <path to dir containing hiveserver2.log* >
 ```
 
 ##### Output
