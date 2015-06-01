@@ -37,7 +37,7 @@ while( my $line = <$info>)  {
 	} 
 		
 	#op start seen
-	if ($cmdstarted==0 && $line =~ /(\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d,\d\d\d).*Starting command:\s*(\w+)/) {
+	if ($cmdstarted==0 && $line =~ /(\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d,\d\d\d).*Starting command:\s*(.*)/) {
 		$cmdstarted=1;
 		$status=$SUCCESS;
 		$start_time=$1; 
