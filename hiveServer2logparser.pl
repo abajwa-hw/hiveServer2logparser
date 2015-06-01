@@ -25,6 +25,7 @@ print $out "Op Id\tStart\tEnd\tDuration (s)\tStatus\tError\tSql\n";
 
 
 $cmdstarted=0;
+$count=0;
 
 while( my $line = <$info>)  {   
     
@@ -88,6 +89,7 @@ while( my $line = <$info>)  {
 		print $filetowriteto "$sql"."\r\n";		
 		print $filetowriteto ";"."\r\n\r\n\r\n\r\n";
 						
+		$count++; 						
 		#reset tracking globals
 		$sql="";
 		$opid="";
@@ -116,7 +118,7 @@ close $out;
 close $outpassed;
 close $outfailed;
 
-print "Wrote summary to output.xls\n";
+print "Done! Found $count queries and wrote summary to output.xls, passedqueries.sql and failedqueries.sql\n";
 
 
 sub trim {
