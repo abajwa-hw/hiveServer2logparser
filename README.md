@@ -3,7 +3,11 @@
 ##### Usage
 
 ```
-perl hiveServer2logparser.pl <path to dir containing hiveserver2.log* >
+#download latest script
+wget https://raw.githubusercontent.com/abajwa-hw/hiveServer2logparser/master/hiveServer2logparser.pl
+
+#run script
+perl hiveServer2logparser.pl <path to dir containing hiveserver2.log* files>
 ```
 
 ##### Output
